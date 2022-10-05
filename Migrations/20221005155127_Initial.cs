@@ -66,7 +66,7 @@ namespace KelimeDefteri.Migrations
             migrationBuilder.InsertData(
                 table: "GunlukKayitlar",
                 columns: new[] { "Id", "date" },
-                values: new object[] { 1, new DateTime(2022, 10, 5, 11, 9, 22, 944, DateTimeKind.Local).AddTicks(111) });
+                values: new object[] { 1, new DateTime(2022, 10, 5, 18, 51, 27, 545, DateTimeKind.Local).AddTicks(4792) });
 
             migrationBuilder.InsertData(
                 table: "Kelimeler",

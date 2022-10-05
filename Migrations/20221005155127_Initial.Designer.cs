@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KelimeDefteri.Migrations
 {
     [DbContext(typeof(DefterDB))]
-    [Migration("20221005080923_Initial")]
+    [Migration("20221005155127_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,7 +43,7 @@ namespace KelimeDefteri.Migrations
                         new
                         {
                             Id = 1,
-                            date = new DateTime(2022, 10, 5, 11, 9, 22, 944, DateTimeKind.Local).AddTicks(111)
+                            date = new DateTime(2022, 10, 5, 18, 51, 27, 545, DateTimeKind.Local).AddTicks(4792)
                         });
                 });
 
@@ -167,20 +167,24 @@ namespace KelimeDefteri.Migrations
 
             modelBuilder.Entity("KelimeDefteri.Models.Kelime", b =>
                 {
-                    b.HasOne("KelimeDefteri.Models.GunlukKayit", null)
+                    b.HasOne("KelimeDefteri.Models.GunlukKayit", "GunlukKayit")
                         .WithMany("Kelimeler")
                         .HasForeignKey("GunlukKayitID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("GunlukKayit");
                 });
 
             modelBuilder.Entity("KelimeDefteri.Models.Tanim", b =>
                 {
-                    b.HasOne("KelimeDefteri.Models.Kelime", null)
+                    b.HasOne("KelimeDefteri.Models.Kelime", "Kelime")
                         .WithMany("Tanimlar")
                         .HasForeignKey("KelimeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Kelime");
                 });
 
             modelBuilder.Entity("KelimeDefteri.Models.GunlukKayit", b =>
