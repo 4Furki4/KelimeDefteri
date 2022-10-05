@@ -1,0 +1,24 @@
+﻿@model List<GunlukKayit>
+
+    @foreach(GunlukKayit kayit in Model)
+    {
+    <table class="table table-striped">
+        <thead>
+            <tr scope="row">@kayit.date.ToShortDateString()</tr>
+        </thead>
+        <tbody>
+            @foreach(Kelime kelime in kayit.Kelimeler)
+            {
+                <tr>
+                    <th>@kelime.Name</th>
+                </tr>
+                @foreach(Tanim tanim in kelime.Tanimlar)
+                {
+                    <tr>
+                        <th>@tanim.AciklamaTuru</th> <td>@tanim.Aciklama</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    }
