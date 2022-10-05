@@ -1,3 +1,25 @@
-﻿@model GunlukKayit
+﻿@model CreateRecordViewModel
 
-<form></form>
+<form asp-action="AddRecord" method="post" class="bg-light p-2">
+<div class="row py-2">
+    <div class="col-2">
+        <input type="date" class="form-control" asp-for="Date"/>
+    </div>    
+</div>
+@for (int i = 0; i < 4; i++)
+    {
+        <div class="row mb-2">
+            <div class="col-2   ">
+                <input type="text" class="form-control border-0" placeholder="Sözcük ismi..." asp-for="Kelime_isimleri[i]" />
+            </div>
+            <div class="col-8">
+                <input type="text" class="form-control border-0" placeholder="Sözcük Tanımı..." asp-for="Kelime_tanimlari[i]" />
+            </div>
+            <div class="col-2">
+                <input type="text" class="form-control border-0" placeholder="Sözcük Türü..." asp-for="Kelime_turleri[i]">
+            </div>
+        </div>
+    }
+    
+    <div class="text-center"><button class="btn btn-outline-success mt-2 fw-bold">Submit</button></div>
+</form>

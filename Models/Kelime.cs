@@ -11,6 +11,8 @@
         public string Name { get; set; } = string.Empty;
 
         public int GunlukKayitID { get; set; }
+        public GunlukKayit GunlukKayit { get; set; } 
         public ICollection<Tanim> Tanimlar { get; set; }
+
     }
 }

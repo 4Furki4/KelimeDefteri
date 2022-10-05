@@ -2,23 +2,28 @@
 
     @foreach(GunlukKayit kayit in Model)
     {
-    <table class="table table-striped">
-        <thead>
-            <tr scope="row">@kayit.date.ToShortDateString()</tr>
-        </thead>
-        <tbody>
-            @foreach(Kelime kelime in kayit.Kelimeler)
-            {
-                <tr>
-                    <th>@kelime.Name</th>
-                </tr>
-                @foreach(Tanim tanim in kelime.Tanimlar)
+    <div class="bg-success text-center my-1 rounded-pill fs-2">@kayit.date.ToShortDateString()</div>
+    <div class="rounded">
+        <table class="table table-sm table-bordered" style="background-color:#483D8B;border-color:#4f288b">
+            <thead>
+                <tr scope="row"><th>Kelime</th><th>Anlam</th></tr>
+            </thead>
+            <tbody>
+                @foreach (Kelime kelime in kayit.Kelimeler)
                 {
                     <tr>
-                        <th>@tanim.AciklamaTuru</th> <td>@tanim.Aciklama</td>
+                        <th>@kelime.Name</th>
+                        <td></td>
                     </tr>
+                    @foreach (Tanim tanim in kelime.Tanimlar)
+                    {
+                        <tr>
+                            <th>@tanim.AciklamaTuru</th>
+                            <td>@tanim.Aciklama</td>
+                        </tr>
+                    }
                 }
-            }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
     }
