@@ -1,25 +1,28 @@
 ﻿@model CreateRecordViewModel
+<h1 class="display-2 text-center mt-5 fw-bold fst-italic">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
+<div class="container position-fixed top-50 start-50 translate-middle">
 
-<form asp-action="AddRecord" method="post" class="bg-light p-2">
-<div class="row py-2">
-    <div class="col-2">
-        <input type="date" class="form-control" asp-for="Date"/>
-    </div>    
-</div>
-@for (int i = 0; i < 4; i++)
-    {
-        <div class="row mb-2">
-            <div class="col-2   ">
-                <input type="text" class="form-control border-0" placeholder="Sözcük ismi..." asp-for="Kelime_isimleri[i]" />
-            </div>
-            <div class="col-8">
-                <input type="text" class="form-control border-0" placeholder="Sözcük Tanımı..." asp-for="Kelime_tanimlari[i]" />
-            </div>
+    <form asp-action="AddRecord" method="post" class="bg-secondary p-2 border-bottom border-dark">
+        <div class="row py-2">
             <div class="col-2">
-                <input type="text" class="form-control border-0" placeholder="Sözcük Türü..." asp-for="Kelime_turleri[i]">
+                <input type="date" class="form-control bg-secondary border-warning" asp-for="Date"  />
             </div>
         </div>
-    }
-    
-    <div class="text-center"><button class="btn btn-outline-success mt-2 fw-bold">Submit</button></div>
-</form>
+        @for (int i = 0; i < 4; i++)
+        {
+            <div class="row mb-2">
+                <div class="col-2 ">
+                    <input type="text" style="background-color:darkslategrey" class="form-control border-0 text-dark" placeholder="Sözcük ismi..." asp-for="Kelime_isimleri[i]" />
+                </div>
+                <div class="offset-1 col">
+                    <input type="text" style="background-color:darkslategrey" class="form-control border-0" placeholder="Sözcük Tanımı..." asp-for="Kelime_tanimlari[i]" />
+                </div>
+                <div class="col-2 offset-1">
+                    <input type="text" style="background-color:darkslategrey" class="form-control border-0" placeholder="Sözcük Türü..." asp-for="Kelime_turleri[i]">
+                </div>
+            </div>
+        }
+
+        <div class="text-center"><button class="btn btn-success mt-2 fw-bold">Submit</button></div>
+    </form>
+</div>

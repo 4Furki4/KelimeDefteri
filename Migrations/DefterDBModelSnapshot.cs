@@ -41,7 +41,7 @@ namespace KelimeDefteri.Migrations
                         new
                         {
                             Id = 1,
-                            date = new DateTime(2022, 10, 5, 18, 51, 27, 545, DateTimeKind.Local).AddTicks(4792)
+                            date = new DateTime(2022, 10, 8, 0, 6, 21, 374, DateTimeKind.Local).AddTicks(2569)
                         });
                 });
 

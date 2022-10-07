@@ -43,11 +43,19 @@ namespace KelimeDefteri.Controllers
             GunlukKayit kayit = new GunlukKayit();
             kayit.date = record.Date;
             
-            for (int i = 0; i < 4; i++) 
+            
+
+            try
             {
-                kayit.Kelimeler.Add(new Kelime { Name = record.Kelime_isimleri[i], Tanimlar =  TanımDon(i, record)});
+                for (int i = 0; i < 4; i++)
+                    kayit.Kelimeler.Add(new Kelime { Name = record.Kelime_isimleri[i], Tanimlar = TanımDon(i, record) });
+            }
+            catch (Exception)
+            {
+                return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
             }
 
+            
             await context.GunlukKayitlar.AddAsync(kayit);
             await context.SaveChangesAsync();
             return View();

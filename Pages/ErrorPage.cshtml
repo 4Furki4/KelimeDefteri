@@ -1,0 +1,41 @@
+﻿@page "/ErrorPage"
+@model ErrorPageModel
+
+<div class="row text-center mt-5">
+    <div class="col-12 mb-5">
+        <h1 class="display-1 mb-5">Bir hata meydana geldi</h1>
+        <h1 class="fs-1">Hata mesajı: @Model.ErrorMessage</h1>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-warning border-1">
+            <a class="text-decoration-none text-black" asp-action="@Model.ReturnAction" asp-controller="@Model.ReturnController">Önceki Sayfaya Dön</a>
+        </button>
+    </div>
+</div>
+
+
+
+
+
+
+
+@functions 
+{
+    public class ErrorPageModel : PageModel 
+    {
+        public string ErrorMessage { get; set; } = string.Empty;
+
+        public string ReturnController { get; set; } = string.Empty;
+
+        public string ReturnAction{ get; set; } = string.Empty;
+
+
+        public void OnGet(string errorMessage, string returnPage) 
+        {
+            ErrorMessage = errorMessage;
+            var s = returnPage.Substring(1).Split("/");
+            ReturnController = s[0];
+            ReturnAction = s[1];
+        }
+    }
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SuuO8rbewi9QAcpawaOxP1KK2o+9QGPNMtfxTxeixgU=",
+  "Hash": "N84CMfFzVAstApEi77kkIynBxEbQIYg8q0FId3XSiEk=",
   "Source": "KelimeDefteri",
   "BasePath": "_content/KelimeDefteri",
   "Mode": "Default",
@@ -10,153 +10,17 @@
     {
       "Name": "KelimeDefteri\\wwwroot",
       "Source": "KelimeDefteri",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css.map",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -170,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -187,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -204,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -221,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -238,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -255,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -272,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -289,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -306,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -323,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -340,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -357,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -374,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -391,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -408,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -425,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -442,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -459,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -476,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -493,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -510,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -527,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -544,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -561,10 +425,146 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/css/bootstrap.rtl.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_accordion.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_accordion.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_accordion.scss",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_accordion.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_alert.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_alert.scss",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_alert.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_badge.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_badge.scss",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_badge.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_breadcrumb.scss",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_breadcrumb.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_button-group.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_button-group.scss",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_button-group.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_buttons.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_buttons.scss",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_buttons.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_card.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_card.scss",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_card.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_carousel.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_carousel.scss",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_carousel.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_close.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_close.scss",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_close.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_containers.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_containers.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_containers.scss",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_containers.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_dropdown.scss",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_dropdown.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_forms.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_forms.scss",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_forms.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_functions.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_functions.scss",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_functions.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_grid.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_grid.scss",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_grid.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_helpers.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_helpers.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_helpers.scss",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_helpers.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_images.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_images.scss",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_images.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_list-group.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_list-group.scss",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_list-group.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_mixins.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_mixins.scss",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_mixins.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_modal.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_modal.scss",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_modal.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_nav.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_nav.scss",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_nav.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_navbar.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_navbar.scss",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_navbar.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_offcanvas.scss",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_offcanvas.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_pagination.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_pagination.scss",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_pagination.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_placeholders.scss",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_placeholders.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_popover.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_popover.scss",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_popover.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_progress.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_progress.scss",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_progress.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_reboot.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_reboot.scss",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_reboot.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_root.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_root.scss",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_root.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_spinners.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_spinners.scss",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_spinners.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_tables.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_tables.scss",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_tables.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_toasts.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_toasts.scss",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_toasts.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_tooltip.scss",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_tooltip.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_transitions.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_transitions.scss",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_transitions.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_type.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_type.scss",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_type.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_utilities.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_utilities.scss",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_utilities.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\_variables.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/_variables.scss",
       "AssetKind": "All",
@@ -1377,27 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\_variables.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
-      "BasePath": "_content/KelimeDefteri",
-      "RelativePath": "lib/bootstrap/scss/bootstrap.scss",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss"
-    },
-    {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss",
-      "SourceId": "KelimeDefteri",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/bootstrap-grid.scss",
       "AssetKind": "All",
@@ -1411,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-grid.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/bootstrap-reboot.scss",
       "AssetKind": "All",
@@ -1428,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-reboot.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/bootstrap-utilities.scss",
       "AssetKind": "All",
@@ -1445,10 +1428,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap-utilities.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "lib/bootstrap/scss/bootstrap.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_floating-labels.scss",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_floating-labels.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_form-check.scss",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-check.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_form-control.scss",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-control.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_form-range.scss",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-range.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_form-select.scss",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-select.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_form-text.scss",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_form-text.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_input-group.scss",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_input-group.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_labels.scss",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_labels.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/forms/_validation.scss",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\forms\\_validation.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_clearfix.scss",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_clearfix.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_colored-links.scss",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_colored-links.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_position.scss",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_position.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_ratio.scss",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_ratio.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_stacks.scss",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_stacks.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_stretched-link.scss",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_stretched-link.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_text-truncation.scss",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_text-truncation.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_visually-hidden.scss",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/helpers/_vr.scss",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\helpers\\_vr.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_alert.scss",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_alert.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_backdrop.scss",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_backdrop.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_border-radius.scss",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_border-radius.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_box-shadow.scss",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_box-shadow.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_breakpoints.scss",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_breakpoints.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_buttons.scss",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_caret.scss",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_caret.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_clearfix.scss",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_clearfix.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_color-scheme.scss",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_color-scheme.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_container.scss",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_container.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_deprecate.scss",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_deprecate.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_forms.scss",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_forms.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_gradients.scss",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_gradients.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_grid.scss",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_grid.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_image.scss",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_image.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_list-group.scss",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_list-group.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_lists.scss",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_lists.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_pagination.scss",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_pagination.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_reset-text.scss",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_reset-text.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_resize.scss",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_resize.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_table-variants.scss",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_table-variants.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_text-truncate.scss",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_text-truncate.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_transition.scss",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_transition.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_utilities.scss",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_utilities.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/mixins/_visually-hidden.scss",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/utilities/_api.scss",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\utilities\\_api.scss"
     },
     {
-      "Identity": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "Identity": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss",
       "SourceId": "KelimeDefteri",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gs-60\\source\\repos\\KelimeDefteri\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
       "BasePath": "_content/KelimeDefteri",
       "RelativePath": "lib/bootstrap/scss/vendor/_rfs.scss",
       "AssetKind": "All",
