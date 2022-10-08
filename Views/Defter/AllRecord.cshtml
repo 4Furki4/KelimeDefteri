@@ -1,29 +1,58 @@
 ﻿@model List<GunlukKayit>
 
-    @foreach(GunlukKayit kayit in Model)
-    {
-    <div class="bg-success text-center my-1 rounded-pill fs-2">@kayit.date.ToShortDateString()</div>
-    <div class="rounded">
-        <table class="table table-sm table-bordered" style="background-color:#483D8B;border-color:#4f288b">
-            <thead>
-                <tr scope="row"><th>Kelime</th><th>Anlam</th></tr>
-            </thead>
-            <tbody>
-                @foreach (Kelime kelime in kayit.Kelimeler)
-                {
-                    <tr>
-                        <th>@kelime.Name</th>
-                        <td></td>
-                    </tr>
-                    @foreach (Tanim tanim in kelime.Tanimlar)
+<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg d-block">
+        <span class="navbar-brand mb-0 ms-2 h1">Navbar</span>
+        <a class="navbar-brand" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
+</nav>
+<div class="container p-3 mt-5">
+    <div class="bg-dark">
+        @foreach (var Kayit in Model)
+        {
+            <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
+                @Kayit.date.ToShortDateString()
+                <ul class="list-group p-3 mb-5">
+                    @foreach (var kelime in Kayit.Kelimeler)
                     {
-                        <tr>
-                            <th>@tanim.AciklamaTuru</th>
-                            <td>@tanim.Aciklama</td>
-                        </tr>
+                        <li class="list-group-item active mt-3" aria-current="true">@kelime.Name</li>
+                        @foreach (var tanim in kelime.Tanimlar)
+                        {
+                            <li class="list-group-item d-inline-flex" style="background-color:antiquewhite">
+                                <div class="col-2">@tanim.AciklamaTuru</div>
+                                @tanim.Aciklama
+                            </li>
+                        }
                     }
-                }
-            </tbody>
-        </table>
+                </ul>
+            </div>
+            
+        }
     </div>
-    }
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*
+
+1-)Kelime: 
+1. isim: tanım
+2. sıfat: tanım
+
+
+
+
+
+*@
+
