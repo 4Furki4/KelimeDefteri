@@ -28,7 +28,7 @@ namespace KelimeDefteri.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel record)
         {
-            List<Tanim> TanımDon(int x, CreateRecordViewModel model)
+            List<Tanim> TanımDon(int x, CreateRecordViewModel model) // Altta Tanımları eklemeye yarayacak metot
             {
                 var boluk = model.Kelime_tanimlari[x].Split(";").ToList();
                 var boluk_tur = model.Kelime_turleri[x].Split(";").ToList();
@@ -38,13 +38,10 @@ namespace KelimeDefteri.Controllers
                     list.Add(new Tanim { Aciklama = boluk[i], AciklamaTuru = boluk_tur[i] });
                 }
                 return list;
-            }
-            
+            }         
+
             GunlukKayit kayit = new GunlukKayit();
             kayit.date = record.Date;
-            
-            
-
             try
             {
                 for (int i = 0; i < 4; i++)
@@ -54,11 +51,33 @@ namespace KelimeDefteri.Controllers
             {
                 return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
             }
-
-            
             await context.GunlukKayitlar.AddAsync(kayit);
             await context.SaveChangesAsync();
             return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> RecordDetail(long id = 1)
+        {
+            GunlukKayit? kayit = await context.GunlukKayitlar
+                .Include(gk => gk.Kelimeler).ThenInclude(k => k.Tanimlar)
+                .FirstOrDefaultAsync(gk => gk.Id == id);
+
+            RecordDetailViewModel recDetailVM = new();
+
+            recDetailVM.Date = kayit.date;
+
+            foreach (Kelime kelime in kayit.Kelimeler)
+            {
+                recDetailVM.KelimeAdlari.Add(kelime.Name);
+
+                foreach (Tanim tanim in kelime.Tanimlar)
+                {
+                    recDetailVM.Tanimlari.Add(tanim.Aciklama);
+                    recDetailVM.TanimTurleri.Add(tanim.AciklamaTuru);
+                }
+            }
+            return View(recDetailVM);
         }
     }
 }
