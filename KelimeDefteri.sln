@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KelimeDefteri", "KelimeDefteri.csproj", "{6CCD87A1-9AB5-4405-B267-4E70F3757E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KelimeDefteri.Tests", "..\KelimeDefteri.Tests\KelimeDefteri.Tests.csproj", "{5043686B-364C-4C07-B9B3-424D1D45DBC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KelimeDefteri.Tests", "..\KelimeDefteri.Tests\KelimeDefteri.Tests.csproj", "{5043686B-364C-4C07-B9B3-424D1D45DBC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

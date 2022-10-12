@@ -1,0 +1,28 @@
+﻿@model SearchInputViewModel
+<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg d-block">
+    <span class="navbar-brand mb-0 ms-2 h1">Kelime Defteri</span>
+    <a class="navbar-brand" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
+</nav>
+<div class="p-2 pb-4" style="background-color:#ed052b">
+    <div class="container">
+        <div class="row mt-3">
+            <h1 class="display-1 text-center fw-bold text-secondary">Kelime Defteri Ana Sayfa</h1>
+        </div>
+        <div class="row mb-2">
+            <div class="offset-2 col-8 rounded-3" style="background-color:#252829">
+                <div class="offset-1 col-10">
+                    <form class="mb-4 mx-3">
+                        <div class="form-group">
+                            <label for="searchInput"></label>
+                            <div class="input-group">
+                                <input type="text" class="form-control border-0 text-white" style="background-color:#181A1B" id="searchInput" placeholder="Kelime veya tarih (GG /AA/YYYY) ile arama" asp-for="searchInput" />
+                                <button class="btn btn-success border-start-0" style="margin-left:1px">Ara</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

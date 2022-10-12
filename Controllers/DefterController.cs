@@ -14,6 +14,15 @@ namespace KelimeDefteri.Controllers
             this.context = context;
         }
 
+        public async Task<IActionResult> Anasayfa()
+        {
+            int kayitSayisi = await context.GunlukKayitlar.CountAsync();
+            long toplamKelime = await context.Kelimeler.LongCountAsync();
+            ViewBag.ToplamKelime = toplamKelime;
+            ViewBag.ToplamKayit = kayitSayisi;
+            return View();
+        }
+
         public async Task<IActionResult> AllRecord()
         {
             List<GunlukKayit> gunlukKayitlar = await context.GunlukKayitlar.Include(gk => gk.Kelimeler).ThenInclude(K=>K.Tanimlar).ToListAsync();

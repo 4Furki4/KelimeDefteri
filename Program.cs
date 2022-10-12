@@ -19,14 +19,10 @@ builder.Services.AddDbContext<DefterDB>(
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
-
-
-
 app.UseStaticFiles();
 
 app.MapRazorPages();
 
-app.MapDefaultControllerRoute();
+app.MapControllerRoute("defter", "{controller=Defter}/{action=anasayfa}");
 
 app.Run();
