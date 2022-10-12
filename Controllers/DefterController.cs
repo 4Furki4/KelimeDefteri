@@ -59,25 +59,15 @@ namespace KelimeDefteri.Controllers
         [HttpGet]
         public async Task<IActionResult> RecordDetail(long id = 1)
         {
-            GunlukKayit? kayit = await context.GunlukKayitlar
+            GunlukKayit kayit = await context.GunlukKayitlar
                 .Include(gk => gk.Kelimeler).ThenInclude(k => k.Tanimlar)
-                .FirstOrDefaultAsync(gk => gk.Id == id);
+                .FirstOrDefaultAsync(gk => gk.Id == id) ?? new GunlukKayit();
 
-            RecordDetailViewModel recDetailVM = new();
-
-            recDetailVM.Date = kayit.date;
-
-            foreach (Kelime kelime in kayit.Kelimeler)
-            {
-                recDetailVM.KelimeAdlari.Add(kelime.Name);
-
-                foreach (Tanim tanim in kelime.Tanimlar)
-                {
-                    recDetailVM.Tanimlari.Add(tanim.Aciklama);
-                    recDetailVM.TanimTurleri.Add(tanim.AciklamaTuru);
-                }
-            }
-            return View(recDetailVM);
+            RecordDetailViewModel recordDetailViewModel = new();
+            recordDetailViewModel.date = kayit.date;
+            recordDetailViewModel.Kelimeler = kayit.Kelimeler;
+            recordDetailViewModel.Id = kayit.Id;
+            return View(recordDetailViewModel);
         }
     }
 }

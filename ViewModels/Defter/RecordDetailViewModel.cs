@@ -1,12 +1,44 @@
-﻿namespace KelimeDefteri.ViewModels.Defter
+﻿using KelimeDefteri.Models;
+
+namespace KelimeDefteri.ViewModels.Defter
 {
     public class RecordDetailViewModel
     {
-        public DateTime Date { get; set; }
-        public List<string> KelimeAdlari { get; set; } = new List<string>();
+        public RecordDetailViewModel()
+        {
+            Kelimeler = new List<Kelime>();
+        }
+        public int Id { get; set; }
 
-        public List<string> Tanimlari { get; set; } = new List<string>();
+        public DateTime date { get; set; }
 
-        public List<string> TanimTurleri { get; set; } = new List<string>();
+        public ICollection<Kelime> Kelimeler { get; set; }
+    }
+
+
+    public class KelimeViewModel
+    {
+        public KelimeViewModel()
+        {
+            Tanimlar = new List<Tanim>();
+        }
+        public long Id { get; set; }
+
+        public string Name { get; set; } = string.Empty;
+
+        public int GunlukKayitID { get; set; }
+        public GunlukKayit? GunlukKayit { get; set; }
+        public ICollection<Tanim> Tanimlar { get; set; }
+    }
+
+    public class TanimViewModel
+    {
+        public long Id { get; set; }
+
+        public long KelimeID { get; set; }
+        public Kelime? Kelime { get; set; }
+        public string Aciklama { get; set; } = string.Empty;
+
+        public string AciklamaTuru { get; set; } = string.Empty;
     }
 }
