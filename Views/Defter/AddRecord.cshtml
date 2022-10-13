@@ -1,11 +1,11 @@
 ﻿@model CreateRecordViewModel
-<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg d-block">
+<nav class="navbar navbar-dark sticky-top bg-secondary navbar-expand-lg d-block">
     <span class="navbar-brand mb-0 ms-2 h1">Kelime Defteri</span>
     <a class="navbar-brand" asp-action="AllRecord" asp-controller="Defter">Tüm Kelimeler</a>
     <span class="offset-9 navbar-text">Tarih: @DateTime.Now.ToShortDateString()</span>
 </nav>
 
-<h1 class="display-2 text-center mt-5 fw-bold fst-italic">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
+<h1 class="display-2 text-center mt-5 fw-bold fst-italic text-secondary">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
 <div class="container position-fixed top-50 start-50 translate-middle">
 
     <form asp-action="AddRecord" method="post" class="bg-secondary p-2 border-bottom border-dark">

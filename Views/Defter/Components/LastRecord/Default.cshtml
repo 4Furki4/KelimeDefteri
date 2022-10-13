@@ -1,0 +1,30 @@
+﻿@model RecordDetailViewModel
+
+<div class="container p-3 mt-5">
+    <div class="bg-dark">
+        <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
+            @Model.date.ToLongDateString()
+            <ul class="list-group p-3 mb-5">
+                @foreach (var kelime in Model.Kelimeler)
+                {
+                    <li class="list-group-item active mt-3" aria-current="true">@kelime.Name</li>
+                    @foreach (var tanim in kelime.Tanimlar)
+                    {
+                        <li class="list-group-item d-inline-flex" style="background-color:antiquewhite">
+                            <div class="col-2">@tanim.AciklamaTuru</div>
+                            @tanim.Aciklama
+                        </li>
+                    }
+                }
+            </ul>
+            <div class="row text-center">
+                <div class="offset-3 col-3">
+                    <button class="btn btn-outline-danger px-4">SİL</button>
+                </div>
+                <div class="offset-1  col-1">
+                    <button class="btn btn-outline-success">GÜNCELLE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
