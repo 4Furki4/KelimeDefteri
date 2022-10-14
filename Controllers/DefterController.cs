@@ -14,11 +14,12 @@ namespace KelimeDefteri.Controllers
             this.context = context;
         }
 
-        public async Task<IActionResult> Homepage()
+        public async Task<IActionResult> Homepage(string? deletedRecordDate)
         {
             HomeViewModel model = new();
             model.TotalWordCount = await context.Words.LongCountAsync(); 
             model.TotalRecordCount = await context.Records.CountAsync();
+            model.deletedRecordDate = deletedRecordDate;
             return View(model);
         }
 
@@ -67,15 +68,34 @@ namespace KelimeDefteri.Controllers
         [HttpGet]
         public async Task<IActionResult> RecordDetail(long id = 1)
         {
-            Record kayit = await context.Records
+            Record? kayit = await context.Records
                 .Include(gk => gk.Words).ThenInclude(k => k.Definitions)
-                .FirstOrDefaultAsync(gk => gk.Id == id) ?? new Record();
-
+                .FirstOrDefaultAsync(gk => gk.Id == id);
+            if (kayit is null)
+            {
+                return RedirectToAction("Homepage");
+            }
             RecordDetailViewModel recordDetailViewModel = new();
             recordDetailViewModel.date = kayit.date;
             recordDetailViewModel.Words = kayit.Words;
             recordDetailViewModel.Id = kayit.Id;
             return View(recordDetailViewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> DeleteAsync(int id, string returnAction)
+        {
+            Record? record = await context.Records.FindAsync(id);
+            string deletedRecordDate = record.date.ToString();
+            if (record != null)
+            {
+                context.Records.Remove(record);
+                //await context.SaveChangesAsync();
+            } 
+            else
+                return RedirectToPage("/ErrorPage", new { errorMessage = "Silmek istediğiniz kayıt mevcut değil!", returnPage = "/Defter/Homepage" });
+
+            return RedirectToAction(returnAction, routeValues: returnAction);
         }
     }
 }

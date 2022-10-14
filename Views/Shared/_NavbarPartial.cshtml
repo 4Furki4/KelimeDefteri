@@ -12,5 +12,8 @@
     @if (Model != "/Defter/Homepage" && Model != "/")
     {
         <a class="navbar-brand text-black" asp-action="Homepage" asp-controller="Defter">Anasayfa</a>
+    }@if (!Model.ToString().Contains("/Defter/RecordDetail"))
+    {
+        
     }
 </nav>

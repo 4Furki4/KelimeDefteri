@@ -5,6 +5,12 @@
         <h1 class="display-1 text-center text-black" style="font-weight:600">Kelime Defteri Ana Sayfası</h1>
     </div>
     <div class="container">
+        @if (Model.deletedRecordDate != "")
+        {
+            <div>
+                @Model.deletedRecordDate tarihli kayıt silindi!
+            </div>
+        }
             <div class="border border-0 rounded-3 bg-secondary">
                 @*Jumbotron with info about app*@
                 <div class="jumbotron text-secondary ps-3 pb-3" style="background-color:#152424">

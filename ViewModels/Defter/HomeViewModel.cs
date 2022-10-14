@@ -7,5 +7,7 @@
         public long TotalWordCount { get; set; }
 
         public int TotalRecordCount { get; set; }
+
+        public string deletedRecordDate { get; set; } = string.Empty;
     }
 }
