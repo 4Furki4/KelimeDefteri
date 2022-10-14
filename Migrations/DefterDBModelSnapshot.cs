@@ -22,7 +22,77 @@ namespace KelimeDefteri.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("KelimeDefteri.Models.GunlukKayit", b =>
+            modelBuilder.Entity("KelimeDefteri.Models.Definition", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+
+                    b.Property<long>("WordID")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("definition")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("definitionType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WordID");
+
+                    b.ToTable("Definitions");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            WordID = 1L,
+                            definition = "Anlamlı ses veya ses birliği, söz, sözcük, lügat",
+                            definitionType = "isim"
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            WordID = 2L,
+                            definition = "Söz, konuşma",
+                            definitionType = "isim"
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            WordID = 2L,
+                            definition = "Söylev",
+                            definitionType = "isim"
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            WordID = 3L,
+                            definition = "Yiğitlik, kahramanlık, cesaret",
+                            definitionType = "isim, eskimiş"
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            WordID = 3L,
+                            definition = "Dinleyenleri etkilemek veya heyecanlandırmak amacıyla yapılan abartılı anlatım",
+                            definitionType = "isim, eskimiş"
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            WordID = 4L,
+                            definition = "Çok konuşan, herkese laf yetiştiren kimse, dil ebesi, söz ebesi",
+                            definitionType = "isim, mecaz"
+                        });
+                });
+
+            modelBuilder.Entity("KelimeDefteri.Models.Record", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,164 +105,94 @@ namespace KelimeDefteri.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("GunlukKayitlar");
+                    b.ToTable("Records");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            date = new DateTime(2022, 10, 12, 6, 26, 39, 510, DateTimeKind.Local).AddTicks(3876)
+                            date = new DateTime(2022, 10, 14, 11, 38, 55, 749, DateTimeKind.Local).AddTicks(7044)
                         });
                 });
 
-            modelBuilder.Entity("KelimeDefteri.Models.Kelime", b =>
+            modelBuilder.Entity("KelimeDefteri.Models.Word", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
-
-                    b.Property<int>("GunlukKayitID")
-                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("RecordId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("GunlukKayitID");
+                    b.HasIndex("RecordId");
 
-                    b.ToTable("Kelimeler");
+                    b.ToTable("Words");
 
                     b.HasData(
                         new
                         {
                             Id = 1L,
-                            GunlukKayitID = 1,
-                            Name = "Kelime"
+                            Name = "Kelime",
+                            RecordId = 1
                         },
                         new
                         {
                             Id = 2L,
-                            GunlukKayitID = 1,
-                            Name = "Nutuk"
+                            Name = "Nutuk",
+                            RecordId = 1
                         },
                         new
                         {
                             Id = 3L,
-                            GunlukKayitID = 1,
-                            Name = "Hamaset"
+                            Name = "Hamaset",
+                            RecordId = 1
                         },
                         new
                         {
                             Id = 4L,
-                            GunlukKayitID = 1,
-                            Name = "Lafebesi"
+                            Name = "Lafebesi",
+                            RecordId = 1
                         });
                 });
 
-            modelBuilder.Entity("KelimeDefteri.Models.Tanim", b =>
+            modelBuilder.Entity("KelimeDefteri.Models.Definition", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
-
-                    b.Property<string>("Aciklama")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("AciklamaTuru")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<long>("KelimeID")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("KelimeID");
-
-                    b.ToTable("Tanimlar");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1L,
-                            Aciklama = "Anlamlı ses veya ses birliği, söz, sözcük, lügat",
-                            AciklamaTuru = "isim",
-                            KelimeID = 1L
-                        },
-                        new
-                        {
-                            Id = 2L,
-                            Aciklama = "Söz, konuşma",
-                            AciklamaTuru = "isim",
-                            KelimeID = 2L
-                        },
-                        new
-                        {
-                            Id = 3L,
-                            Aciklama = "Söylev",
-                            AciklamaTuru = "isim",
-                            KelimeID = 2L
-                        },
-                        new
-                        {
-                            Id = 4L,
-                            Aciklama = "Yiğitlik, kahramanlık, cesaret",
-                            AciklamaTuru = "isim, eskimiş",
-                            KelimeID = 3L
-                        },
-                        new
-                        {
-                            Id = 5L,
-                            Aciklama = "Dinleyenleri etkilemek veya heyecanlandırmak amacıyla yapılan abartılı anlatım",
-                            AciklamaTuru = "isim, eskimiş",
-                            KelimeID = 3L
-                        },
-                        new
-                        {
-                            Id = 6L,
-                            Aciklama = "Çok konuşan, herkese laf yetiştiren kimse, dil ebesi, söz ebesi",
-                            AciklamaTuru = "isim, mecaz",
-                            KelimeID = 4L
-                        });
-                });
-
-            modelBuilder.Entity("KelimeDefteri.Models.Kelime", b =>
-                {
-                    b.HasOne("KelimeDefteri.Models.GunlukKayit", "GunlukKayit")
-                        .WithMany("Kelimeler")
-                        .HasForeignKey("GunlukKayitID")
+                    b.HasOne("KelimeDefteri.Models.Word", "Word")
+                        .WithMany("Definitions")
+                        .HasForeignKey("WordID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("GunlukKayit");
+                    b.Navigation("Word");
                 });
 
-            modelBuilder.Entity("KelimeDefteri.Models.Tanim", b =>
+            modelBuilder.Entity("KelimeDefteri.Models.Word", b =>
                 {
-                    b.HasOne("KelimeDefteri.Models.Kelime", "Kelime")
-                        .WithMany("Tanimlar")
-                        .HasForeignKey("KelimeID")
+                    b.HasOne("KelimeDefteri.Models.Record", "Record")
+                        .WithMany("Words")
+                        .HasForeignKey("RecordId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Kelime");
+                    b.Navigation("Record");
                 });
 
-            modelBuilder.Entity("KelimeDefteri.Models.GunlukKayit", b =>
+            modelBuilder.Entity("KelimeDefteri.Models.Record", b =>
                 {
-                    b.Navigation("Kelimeler");
+                    b.Navigation("Words");
                 });
 
-            modelBuilder.Entity("KelimeDefteri.Models.Kelime", b =>
+            modelBuilder.Entity("KelimeDefteri.Models.Word", b =>
                 {
-                    b.Navigation("Tanimlar");
+                    b.Navigation("Definitions");
                 });
 #pragma warning restore 612, 618
         }

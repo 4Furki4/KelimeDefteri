@@ -14,18 +14,17 @@ namespace KelimeDefteri.Controllers
             this.context = context;
         }
 
-        public async Task<IActionResult> Anasayfa()
+        public async Task<IActionResult> Home()
         {
-            int kayitSayisi = await context.GunlukKayitlar.CountAsync();
-            long toplamKelime = await context.Kelimeler.LongCountAsync();
-            ViewBag.ToplamKelime = toplamKelime;
-            ViewBag.ToplamKayit = kayitSayisi;
-            return View();
+            HomeViewModel model = new();
+            model.TotalWordCount = await context.Words.LongCountAsync(); 
+            model.TotalRecordCount = await context.Records.CountAsync();
+            return View(model);
         }
 
         public async Task<IActionResult> AllRecord()
         {
-            List<GunlukKayit> gunlukKayitlar = await context.GunlukKayitlar.Include(gk => gk.Kelimeler).ThenInclude(K=>K.Tanimlar).ToListAsync();
+            List<Record> gunlukKayitlar = await context.Records.Include(gk => gk.Words).ThenInclude(K=>K.Definitions).ToListAsync();
             return View(gunlukKayitlar);
         }
 
@@ -37,30 +36,30 @@ namespace KelimeDefteri.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel record)
         {
-            List<Tanim> TanımDon(int x, CreateRecordViewModel model) // Altta Tanımları eklemeye yarayacak metot
+            List<Definition> TanımDon(int x, CreateRecordViewModel model) // Altta Tanımları eklemeye yarayacak metot
             {
                 var boluk = model.Kelime_tanimlari[x].Split(";").ToList();
                 var boluk_tur = model.Kelime_turleri[x].Split(";").ToList();
-                List<Tanim> list = new List<Tanim>();
+                List<Definition> list = new List<Definition>();
                 for (int i = 0; i < boluk.Count; i++)
                 {
-                    list.Add(new Tanim { Aciklama = boluk[i], AciklamaTuru = boluk_tur[i] });
+                    list.Add(new Definition { definition = boluk[i], definitionType = boluk_tur[i] });
                 }
                 return list;
             }         
 
-            GunlukKayit kayit = new GunlukKayit();
+            Record kayit = new Record();
             kayit.date = record.Date;
             try
             {
                 for (int i = 0; i < 4; i++)
-                    kayit.Kelimeler.Add(new Kelime { Name = record.Kelime_isimleri[i], Tanimlar = TanımDon(i, record) });
+                    kayit.Words.Add(new Word { Name = record.Kelime_isimleri[i], Definitions = TanımDon(i, record) });
             }
             catch (Exception)
             {
                 return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
             }
-            await context.GunlukKayitlar.AddAsync(kayit);
+            await context.Records.AddAsync(kayit);
             await context.SaveChangesAsync();
             return View();
         }
@@ -68,13 +67,13 @@ namespace KelimeDefteri.Controllers
         [HttpGet]
         public async Task<IActionResult> RecordDetail(long id = 1)
         {
-            GunlukKayit kayit = await context.GunlukKayitlar
-                .Include(gk => gk.Kelimeler).ThenInclude(k => k.Tanimlar)
-                .FirstOrDefaultAsync(gk => gk.Id == id) ?? new GunlukKayit();
+            Record kayit = await context.Records
+                .Include(gk => gk.Words).ThenInclude(k => k.Definitions)
+                .FirstOrDefaultAsync(gk => gk.Id == id) ?? new Record();
 
             RecordDetailViewModel recordDetailViewModel = new();
             recordDetailViewModel.date = kayit.date;
-            recordDetailViewModel.Kelimeler = kayit.Kelimeler;
+            recordDetailViewModel.Kelimeler = kayit.Words;
             recordDetailViewModel.Id = kayit.Id;
             return View(recordDetailViewModel);
         }

@@ -23,6 +23,6 @@ app.UseStaticFiles();
 
 app.MapRazorPages();
 
-app.MapControllerRoute("defter", "{controller=Defter}/{action=anasayfa}");
+app.MapControllerRoute("defter", "{controller=Defter}/{action=home}");
 
 app.Run();

@@ -6,33 +6,33 @@ namespace KelimeDefteri.Models
     {
         public DefterDB(DbContextOptions<DefterDB> optionsBuilder) : base(optionsBuilder) { }
 
-        public DbSet<GunlukKayit> GunlukKayitlar => Set<GunlukKayit>();
+        public DbSet<Record> Records => Set<Record>();
 
-        public DbSet<Kelime> Kelimeler => Set<Kelime>();
+        public DbSet<Word> Words => Set<Word>();
 
-        public DbSet<Tanim> Tanimlar => Set<Tanim>();
+        public DbSet<Definition> Definitions => Set<Definition>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GunlukKayit>()
-                .HasMany(gk => gk.Kelimeler)
-                .WithOne(g => g.GunlukKayit).HasForeignKey(k => k.GunlukKayitID);
-            modelBuilder.Entity<Tanim>().HasOne(t => t.Kelime).WithMany(k => k.Tanimlar).HasForeignKey(t => t.KelimeID);
-            modelBuilder.Entity<GunlukKayit>().HasData(new GunlukKayit { Id = 1, date = DateTime.Now });
-            modelBuilder.Entity<Kelime>().HasData(
-                new Kelime { Id = 1, GunlukKayitID = 1, Name = "Kelime" },
-                new Kelime { Id = 2, GunlukKayitID = 1, Name = "Nutuk" },
-                new Kelime { Id = 3, GunlukKayitID = 1, Name = "Hamaset" },
-                new Kelime { Id = 4, GunlukKayitID = 1, Name = "Lafebesi" }
+            modelBuilder.Entity<Record>()
+                .HasMany(gk => gk.Words)
+                .WithOne(g => g.Record).HasForeignKey(k => k.RecordId);
+            modelBuilder.Entity<Definition>().HasOne(t => t.Word).WithMany(k => k.Definitions).HasForeignKey(t => t.WordID);
+            modelBuilder.Entity<Record>().HasData(new Record { Id = 1, date = DateTime.Now });
+            modelBuilder.Entity<Word>().HasData(
+                new Word { Id = 1, RecordId = 1, Name = "Kelime" },
+                new Word { Id = 2, RecordId = 1, Name = "Nutuk" },
+                new Word { Id = 3, RecordId = 1, Name = "Hamaset" },
+                new Word { Id = 4, RecordId = 1, Name = "Lafebesi" }
                 );
 
-            modelBuilder.Entity<Tanim>().HasData(
-                new Tanim { Id = 1, KelimeID = 1, Aciklama = "Anlamlı ses veya ses birliği, söz, sözcük, lügat", AciklamaTuru = "isim" },
-                new Tanim { Id = 2, KelimeID = 2, Aciklama = "Söz, konuşma", AciklamaTuru = "isim" },
-                new Tanim { Id = 3, KelimeID = 2, Aciklama = "Söylev", AciklamaTuru = "isim" },
-                new Tanim { Id = 4, KelimeID = 3, Aciklama = "Yiğitlik, kahramanlık, cesaret", AciklamaTuru = "isim, eskimiş" },
-                new Tanim { Id = 5, KelimeID = 3, Aciklama = "Dinleyenleri etkilemek veya heyecanlandırmak amacıyla yapılan abartılı anlatım", AciklamaTuru = "isim, eskimiş"},
-                new Tanim { Id = 6, KelimeID = 4, Aciklama = "Çok konuşan, herkese laf yetiştiren kimse, dil ebesi, söz ebesi", AciklamaTuru = "isim, mecaz" }
+            modelBuilder.Entity<Definition>().HasData(
+                new Definition { Id = 1, WordID = 1, definition = "Anlamlı ses veya ses birliği, söz, sözcük, lügat", definitionType = "isim" },
+                new Definition { Id = 2, WordID = 2, definition = "Söz, konuşma", definitionType = "isim" },
+                new Definition { Id = 3, WordID = 2, definition = "Söylev", definitionType = "isim" },
+                new Definition { Id = 4, WordID = 3, definition = "Yiğitlik, kahramanlık, cesaret", definitionType = "isim, eskimiş" },
+                new Definition { Id = 5, WordID = 3, definition = "Dinleyenleri etkilemek veya heyecanlandırmak amacıyla yapılan abartılı anlatım", definitionType = "isim, eskimiş"},
+                new Definition { Id = 6, WordID = 4, definition = "Çok konuşan, herkese laf yetiştiren kimse, dil ebesi, söz ebesi", definitionType = "isim, mecaz" }
                 );
         }
 

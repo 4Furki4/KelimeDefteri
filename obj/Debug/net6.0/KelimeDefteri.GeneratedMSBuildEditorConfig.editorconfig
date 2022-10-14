@@ -39,12 +39,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXEFsbFJlY29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/Anasayfa.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXEFuYXNheWZhLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/Components/LastRecord/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXENvbXBvbmVudHNcTGFzdFJlY29yZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXEhvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/RecordDetail.cshtml]

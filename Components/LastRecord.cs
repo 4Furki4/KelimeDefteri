@@ -16,15 +16,15 @@ namespace KelimeDefteri.Components
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            GunlukKayit kayit = await context.GunlukKayitlar
-                .Include(gk => gk.Kelimeler).ThenInclude(k => k.Tanimlar).OrderBy(g=> g.Id)
-                .LastOrDefaultAsync() ?? new GunlukKayit();
+            Record kayit = await context.Records
+                .Include(gk => gk.Words).ThenInclude(k => k.Definitions).OrderBy(g=> g.Id)
+                .LastOrDefaultAsync() ?? new Record();
 
-            RecordDetailViewModel recordDetailViewModel = new();
-            recordDetailViewModel.date = kayit.date;
-            recordDetailViewModel.Kelimeler = kayit.Kelimeler;
-            recordDetailViewModel.Id = kayit.Id;
-            return View(recordDetailViewModel);
+            RecordDetailViewModel VM = new();
+            VM.date = kayit.date;
+            VM.Kelimeler = kayit.Words;
+            VM.Id = kayit.Id;
+            return View(VM);
         }
     }
 }

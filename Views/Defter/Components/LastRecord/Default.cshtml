@@ -1,18 +1,18 @@
 ﻿@model RecordDetailViewModel
 
 <div class="container p-3 mt-5">
-    <div class="bg-dark">
-        <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
-            @Model.date.ToLongDateString()
-            <ul class="list-group p-3 mb-5">
+    <div style="background-color:#152424">
+        <div class="text-white fw-bold fs-4 p-3">
+            Son Eklenen Kayıt - @Model.date.ToLongDateString()
+            <ul class="list-group p-3 mb-3">
                 @foreach (var kelime in Model.Kelimeler)
                 {
-                    <li class="list-group-item active mt-3" aria-current="true">@kelime.Name</li>
-                    @foreach (var tanim in kelime.Tanimlar)
+                    <li class="list-group-item active mt-3 border-0" style="background-color:#901aff" aria-current="true">@kelime.Name</li>
+                    @foreach (var tanim in kelime.Definitions)
                     {
                         <li class="list-group-item d-inline-flex" style="background-color:antiquewhite">
-                            <div class="col-2">@tanim.AciklamaTuru</div>
-                            @tanim.Aciklama
+                            <div class="col-2">@tanim.definitionType</div>
+                            @tanim.definition
                         </li>
                     }
                 }

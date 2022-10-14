@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="PartialViews\" />
-    <Folder Include="Views\Defter\Components\" />
   </ItemGroup>
 
 </Project>
