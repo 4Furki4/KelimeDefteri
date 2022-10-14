@@ -1,9 +1,5 @@
 ﻿@model List<Record>
-
-<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg d-block">
-        <span class="navbar-brand mb-0 ms-2 h1">Kelime Defteri</span>
-        <a class="navbar-brand" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
-</nav>
+<partial name="_NavbarPartial" model="@Context.Request.Path" />
 <div class="container p-3 mt-5">
     <div class="bg-dark">
         @foreach (var Kayit in Model)
@@ -28,29 +24,4 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@*
-
-1-)Kelime: 
-1. isim: tanım
-2. sıfat: tanım
-
-
-
-
-
-*@
 

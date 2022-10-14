@@ -1,16 +1,5 @@
 ﻿@model HomeViewModel
-<nav class="navbar sticky-top navbar-expand-lg d-block text-black" style="background-color:#8F00FF">
-    <span class="navbar-brand mb-0 ms-2 h1">Kelime Defteri</span>
-    <a class="navbar-brand text-black" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
-    @*Navbar search input*@
-    <form class="d-inline" method="post" asp-action="">
-        <button class="float-end mb-1 btn btn-sm btn-success me-4 text-black">Ara</button>
-        <input type="search" class=" border-0 text-black float-end form-control form-control-sm"
-        style="background-color:#181A1B;width:15rem; box-shadow:none" id="searchInput"
-        placeholder="Kelime veya tarih (GG /AA/YYYY)" asp-for="searchInput"
-        />
-    </form>
-</nav>
+<partial name="_NavbarPartial" model="@Context.Request.Path" />
 <div class="p-2 pb-5 bg-dark">
     <div class="row mt-3 mb-3">
         <h1 class="display-1 text-center text-black" style="font-weight:600">Kelime Defteri Ana Sayfası</h1>
@@ -34,7 +23,7 @@
                                         <div class="form-group">
                                             <label for="searchInput"></label>
                                             <div class="input-group">
-                                                <input type="search" class="form-control border-0 text-white" style="background-color:#181A1B" id="searchInput" 
+                                                <input type="search" class="form-control border-0 text-dark" style="background-color:#181A1B" id="searchInput" 
                                                 placeholder="Kelime veya tarih (GG /AA/YYYY) ile arama"
                                                 asp-for="searchInput" 
                                                 />
@@ -55,5 +44,6 @@
     </div>
 </div>
 <div class="container mt-5 text-white">
-    @await Component.InvokeAsync("LastRecord")
+    @*@await Component.InvokeAsync("LastRecord")*@
+    <vc:last-record/>
 </div>               

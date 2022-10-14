@@ -8,5 +8,7 @@
 
         public List<string> WordTypes { get; set; } = new List<string>();
 
+        public PathString PathString { get; set; } = PathString.Empty;
+
     }
 }
