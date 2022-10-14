@@ -7,9 +7,11 @@
         <h1 class="fs-1">Hata mesajı: @Model.ErrorMessage</h1>
     </div>
     <div class="col-12">
-        <button class="btn btn-warning border-1">
-            <a class="text-decoration-none text-black" asp-action="@Model.ReturnAction" asp-controller="@Model.ReturnController">Önceki Sayfaya Dön</a>
-        </button>
+
+            <a class="col-3 btn btn-warning border-1 border-0 btn-lg text-black" role="button" 
+            asp-action="@Model.ReturnAction" asp-controller="@Model.ReturnController">
+                Önceki Sayfaya Dön
+            </a>
     </div>
 </div>
 
