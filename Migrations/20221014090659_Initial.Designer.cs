@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KelimeDefteri.Migrations
 {
     [DbContext(typeof(DefterDB))]
-    [Migration("20221014083855_Initial")]
+    [Migration("20221014090659_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -113,7 +113,7 @@ namespace KelimeDefteri.Migrations
                         new
                         {
                             Id = 1,
-                            date = new DateTime(2022, 10, 14, 11, 38, 55, 749, DateTimeKind.Local).AddTicks(7044)
+                            date = new DateTime(2022, 10, 14, 12, 6, 59, 465, DateTimeKind.Local).AddTicks(8443)
                         });
                 });
 

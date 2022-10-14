@@ -22,7 +22,7 @@ namespace KelimeDefteri.Components
 
             RecordDetailViewModel VM = new();
             VM.date = kayit.date;
-            VM.Kelimeler = kayit.Words;
+            VM.Words = kayit.Words;
             VM.Id = kayit.Id;
             return View(VM);
         }

@@ -6,39 +6,39 @@ namespace KelimeDefteri.ViewModels.Defter
     {
         public RecordDetailViewModel()
         {
-            Kelimeler = new List<Word>();
+            Words = new List<Word>();
         }
         public int Id { get; set; }
 
         public DateTime date { get; set; }
 
-        public ICollection<Word> Kelimeler { get; set; }
+        public ICollection<Word> Words { get; set; }
     }
 
 
-    public class KelimeViewModel
+    public class WordViewModel
     {
-        public KelimeViewModel()
+        public WordViewModel()
         {
-            Tanimlar = new List<Definition>();
+            Definitions = new List<Definition>();
         }
         public long Id { get; set; }
 
         public string Name { get; set; } = string.Empty;
 
-        public int GunlukKayitID { get; set; }
-        public Record? GunlukKayit { get; set; }
-        public ICollection<Definition> Tanimlar { get; set; }
+        public int RecordID { get; set; }
+        public Record? Record { get; set; }
+        public ICollection<Definition> Definitions { get; set; }
     }
 
-    public class TanimViewModel
+    public class DefinitionViewModel
     {
         public long Id { get; set; }
 
-        public long KelimeID { get; set; }
-        public Word? Kelime { get; set; }
-        public string Aciklama { get; set; } = string.Empty;
+        public long WordID { get; set; }
+        public Word? Word { get; set; }
+        public string definition { get; set; } = string.Empty;
 
-        public string AciklamaTuru { get; set; } = string.Empty;
+        public string definitionType { get; set; } = string.Empty;
     }
 }

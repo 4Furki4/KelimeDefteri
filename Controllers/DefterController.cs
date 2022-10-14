@@ -14,7 +14,7 @@ namespace KelimeDefteri.Controllers
             this.context = context;
         }
 
-        public async Task<IActionResult> Home()
+        public async Task<IActionResult> Homepage()
         {
             HomeViewModel model = new();
             model.TotalWordCount = await context.Words.LongCountAsync(); 
@@ -24,8 +24,8 @@ namespace KelimeDefteri.Controllers
 
         public async Task<IActionResult> AllRecord()
         {
-            List<Record> gunlukKayitlar = await context.Records.Include(gk => gk.Words).ThenInclude(K=>K.Definitions).ToListAsync();
-            return View(gunlukKayitlar);
+            List<Record> records = await context.Records.Include(gk => gk.Words).ThenInclude(K=>K.Definitions).ToListAsync();
+            return View(records);
         }
 
         public IActionResult AddRecord() // to get blank form for adding new record
@@ -34,12 +34,12 @@ namespace KelimeDefteri.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel record)
+        public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel recordVM)
         {
-            List<Definition> TanımDon(int x, CreateRecordViewModel model) // Altta Tanımları eklemeye yarayacak metot
+            List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Altta Tanımları eklemeye yarayacak metot
             {
-                var boluk = model.Kelime_tanimlari[x].Split(";").ToList();
-                var boluk_tur = model.Kelime_turleri[x].Split(";").ToList();
+                var boluk = model.WordDefs[x].Split(";").ToList();
+                var boluk_tur = model.WordTypes[x].Split(";").ToList();
                 List<Definition> list = new List<Definition>();
                 for (int i = 0; i < boluk.Count; i++)
                 {
@@ -49,11 +49,11 @@ namespace KelimeDefteri.Controllers
             }         
 
             Record kayit = new Record();
-            kayit.date = record.Date;
+            kayit.date = recordVM.Date;
             try
             {
                 for (int i = 0; i < 4; i++)
-                    kayit.Words.Add(new Word { Name = record.Kelime_isimleri[i], Definitions = TanımDon(i, record) });
+                    kayit.Words.Add(new Word { Name = recordVM.WordNames[i], Definitions = GetDefinitions(i, recordVM) });
             }
             catch (Exception)
             {
@@ -73,7 +73,7 @@ namespace KelimeDefteri.Controllers
 
             RecordDetailViewModel recordDetailViewModel = new();
             recordDetailViewModel.date = kayit.date;
-            recordDetailViewModel.Kelimeler = kayit.Words;
+            recordDetailViewModel.Words = kayit.Words;
             recordDetailViewModel.Id = kayit.Id;
             return View(recordDetailViewModel);
         }
