@@ -1,4 +1,5 @@
 ﻿using KelimeDefteri.Models;
+using KelimeDefteri.ViewModels;
 using KelimeDefteri.ViewModels.Defter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -27,10 +28,19 @@ namespace KelimeDefteri.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> AllRecord(int productPage = 1)
+        public async Task<IActionResult> AllRecord(int recordPage = 1)
         {
+            List<AllRecordViewModel> model = new();
             List<Record> records = await context.Records.Include(gk => gk.Words).ThenInclude(K=>K.Definitions).ToListAsync();
-            return View(await context.Records.Include(gk => gk.Words).ThenInclude(K => K.Definitions).OrderBy(GK => GK.date).Skip((productPage-1) * pageSize).Take(pageSize).ToListAsync());
+            foreach (Record record in records)
+            {
+                model.Add(new AllRecordViewModel { Words = record.Words, date = record.date, Id = record.Id});
+            }
+            return View(new RecordListViewModel
+            {
+                Records = model.OrderBy(m => m.Id).Skip((recordPage - 1) * pageSize).Take(pageSize),
+                PagingInfo = new PagingInfo { CurrentPage = recordPage, ItemsPerPage = pageSize, TotalItems = await context.Records.CountAsync() }
+            });
         }
 
         public IActionResult AddRecord() // to get blank form for adding new record
