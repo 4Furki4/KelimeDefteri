@@ -8,6 +8,7 @@ namespace KelimeDefteri.Controllers
     public class DefterController : Controller
     {
         private DefterDB context;
+        public int pageSize = 4;
 
         public DefterController(DefterDB context)
         {
@@ -26,10 +27,10 @@ namespace KelimeDefteri.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> AllRecord()
+        public async Task<IActionResult> AllRecord(int productPage = 1)
         {
             List<Record> records = await context.Records.Include(gk => gk.Words).ThenInclude(K=>K.Definitions).ToListAsync();
-            return View(records);
+            return View(await context.Records.Include(gk => gk.Words).ThenInclude(K => K.Definitions).OrderBy(GK => GK.date).Skip((productPage-1) * pageSize).Take(pageSize).ToListAsync());
         }
 
         public IActionResult AddRecord() // to get blank form for adding new record
