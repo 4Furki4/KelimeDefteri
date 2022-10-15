@@ -14,12 +14,15 @@ namespace KelimeDefteri.Controllers
             this.context = context;
         }
 
-        public async Task<IActionResult> Homepage(string deletedRecordDate)
+        public async Task<IActionResult> Homepage(string? deletedRecordDate)
         {
-            HomeViewModel model = new();
-            model.TotalWordCount = await context.Words.LongCountAsync(); 
-            model.TotalRecordCount = await context.Records.CountAsync();
-            model.deletedRecordDate = deletedRecordDate;
+            HomeViewModel model = new() // Fill homepage's model
+            {
+                TotalWordCount = await context.Words.LongCountAsync(),
+                TotalRecordCount = await context.Records.CountAsync(),
+                deletedRecordDate = deletedRecordDate // be aware of it can be null which needed in view
+            };
+            
             return View(model);
         }
 
@@ -37,10 +40,10 @@ namespace KelimeDefteri.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel recordVM)
         {
-            List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Altta Tanımları eklemeye yarayacak metot
+            List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Get definitions for each word
             {
-                var boluk = model.WordDefs[x].Split(";").ToList();
-                var boluk_tur = model.WordTypes[x].Split(";").ToList();
+                var boluk = model.WordDefs[x].Split(";").ToList(); // definitions are entered with semicolon between each def. That should be changed! 
+                var boluk_tur = model.WordTypes[x].Split(";").ToList(); //Types have same logic with definitions BC their count must be equal
                 List<Definition> list = new List<Definition>();
                 for (int i = 0; i < boluk.Count; i++)
                 {
@@ -53,7 +56,7 @@ namespace KelimeDefteri.Controllers
             kayit.date = recordVM.Date;
             try
             {
-                for (int i = 0; i < 4; i++)
+                for (int i = 0; i < 4; i++) // If there is less than 4 words entered, exception thrown 
                     kayit.Words.Add(new Word { Name = recordVM.WordNames[i], Definitions = GetDefinitions(i, recordVM) });
             }
             catch (Exception)
@@ -62,7 +65,8 @@ namespace KelimeDefteri.Controllers
             }
             await context.Records.AddAsync(kayit);
             await context.SaveChangesAsync();
-            return View();
+            // Redirecting to added record's detail page
+            return RedirectToAction(nameof(RecordDetail), new {id = kayit.Id});
         }
 
         [HttpGet]
@@ -90,10 +94,11 @@ namespace KelimeDefteri.Controllers
             if (record != null)
             {
                 context.Records.Remove(record);
-                //await context.SaveChangesAsync();
+                await context.SaveChangesAsync();
             } 
             else
-                return RedirectToPage("/ErrorPage", new { errorMessage = "Silmek istediğiniz kayıt mevcut değil!", returnPage = "/Defter/Homepage" });
+                // redirect to error page with return view is HomePage
+                return RedirectToPage("/ErrorPage", new { errorMessage = "Silmek istediğiniz kayıt mevcut değil!", returnPage = "/Defter/Homepage" }); 
 
             return RedirectToAction(returnAction, new {deletedRecordDate = deletedRecordDate});
         }
