@@ -89,17 +89,30 @@ namespace KelimeDefteri.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id, string returnAction)
         {
-            Record? record = await context.Records.FindAsync(id);
-            string deletedRecordDate = record.date.ToShortDateString();
-            if (record != null)
+            string deletedRecordDate;
+            try // Check if there is a record with given id
             {
-                context.Records.Remove(record);
-                await context.SaveChangesAsync();
-            } 
-            else
-                // redirect to error page with return view is HomePage
-                return RedirectToPage("/ErrorPage", new { errorMessage = "Silmek istediğiniz kayıt mevcut değil!", returnPage = "/Defter/Homepage" }); 
-
+                Record? record = await context.Records.FindAsync(id);
+                deletedRecordDate= record.date.ToShortDateString();
+                if (record != null)
+                {
+                    context.Records.Remove(record);
+                    await context.SaveChangesAsync();
+                }
+            } // If there is no, then redirect to error page with error message and returnPage
+            catch (Exception ex)
+            {
+                if (ex.Message == "Object reference not set to an instance of an object.")
+                {
+                    return RedirectToPage("/ErrorPage", new { errorMessage = "Silmek istediğiniz kayıt mevcut değil!", returnPage = "/Defter/Homepage" });
+                }
+                else
+                {
+                    return RedirectToPage("/ErrorPage", new { errorMessage = ex.Message, returnPage = "/Defter/Homepage" });
+                }
+                
+            }
+            // If record is successfully deleted, then redirect to given action with deletedRecordDate
             return RedirectToAction(returnAction, new {deletedRecordDate = deletedRecordDate});
         }
     }
