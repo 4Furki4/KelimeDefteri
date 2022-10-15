@@ -19,20 +19,7 @@
             </ul>
             <div class="row text-center">
                 <div class="offset-3 col-3">
-                    <a role="button" id="liveToastBtn" asp-action="Delete" asp-route-id="@Model.Id" asp-route-returnAction="Homepage" class="btn btn-outline-danger px-4">SİL</a>
-                </div>
-                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                        <div class="toast-header">
-                            <img src="..." class="rounded me-2" alt="...">
-                            <strong class="me-auto">Bootstrap</strong>
-                            <small>11 mins ago</small>
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                        </div>
-                        <div class="toast-body">
-                            Hello, world! This is a toast message.
-                        </div>
-                    </div>
+                    <a role="button" asp-action="Delete" asp-route-id="@Model.Id" asp-route-returnAction="Homepage" class="btn btn-outline-danger px-4">SİL</a>
                 </div>
                 <div class="offset-1  col-1">
                     <button class="btn btn-outline-success">GÜNCELLE</button>

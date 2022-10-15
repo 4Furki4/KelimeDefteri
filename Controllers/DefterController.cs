@@ -83,7 +83,7 @@ namespace KelimeDefteri.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> DeleteAsync(int id, string returnAction)
+        public async Task<IActionResult> Delete(int id, string returnAction)
         {
             Record? record = await context.Records.FindAsync(id);
             string deletedRecordDate = record.date.ToShortDateString();

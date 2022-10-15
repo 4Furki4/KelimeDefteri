@@ -19,8 +19,10 @@
             </ul>
             <div class="row text-center">
                 <div class="offset-3 col-3">
-                    <button class="btn btn-lg btn-outline-danger px-4">SİL</button>
+                    @*DELETES CURRENT RECORD AND REDIRECTS TO HOMEPAGE*@
+                    <a role="button" asp-action="Delete" asp-route-id="@Model.Id" asp-route-returnAction="Homepage" class="btn btn-outline-danger px-4">SİL</a>
                 </div>
+                @*INCOMPLETE BUTTON!*@
                 <div class="offset-1 col-1">
                     <button class="btn btn-lg btn-outline-success">GÜNCELLE</button>
                 </div>
