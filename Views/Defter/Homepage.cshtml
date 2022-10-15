@@ -1,16 +1,29 @@
 ﻿@model HomeViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
+@if (Model.deletedRecordDate != null)
+{
+    <div class="container">
+        <div class="offset-4 row">
+            <div class="text-white bg-warning rounded-pill" id="warningBox" style="width:400px; height:80px">
+                <button id="closeBtn" class="btn btn-close ms-4"></button>
+                <div class="h3 text-center text-danger">Silinen kayıt: @Model.deletedRecordDate</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let warningBoxEl = document.getElementById("warningBox")
+        let closeBtnEl = document.getElementById("closeBtn");
+        closeBtnEl.addEventListener("click", (event) => {
+            warningBoxEl.style.display = "none";
+        })
+    </script>
+}   
 <div class="p-2 pb-5 bg-dark">
     <div class="row mt-3 mb-3">
         <h1 class="display-1 text-center text-black" style="font-weight:600">Kelime Defteri Ana Sayfası</h1>
     </div>
     <div class="container">
-        @if (Model.deletedRecordDate != "")
-        {
-            <div>
-                @Model.deletedRecordDate tarihli kayıt silindi!
-            </div>
-        }
+        
             <div class="border border-0 rounded-3 bg-secondary">
                 @*Jumbotron with info about app*@
                 <div class="jumbotron text-secondary ps-3 pb-3" style="background-color:#152424">
@@ -52,4 +65,4 @@
 <div class="container mt-5 text-white">
     @*@await Component.InvokeAsync("LastRecord")*@
     <vc:last-record/>
-</div>               
+</div>            

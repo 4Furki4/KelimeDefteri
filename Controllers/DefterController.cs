@@ -14,7 +14,7 @@ namespace KelimeDefteri.Controllers
             this.context = context;
         }
 
-        public async Task<IActionResult> Homepage(string? deletedRecordDate)
+        public async Task<IActionResult> Homepage(string deletedRecordDate)
         {
             HomeViewModel model = new();
             model.TotalWordCount = await context.Words.LongCountAsync(); 
@@ -86,7 +86,7 @@ namespace KelimeDefteri.Controllers
         public async Task<IActionResult> DeleteAsync(int id, string returnAction)
         {
             Record? record = await context.Records.FindAsync(id);
-            string deletedRecordDate = record.date.ToString();
+            string deletedRecordDate = record.date.ToShortDateString();
             if (record != null)
             {
                 context.Records.Remove(record);
@@ -95,7 +95,7 @@ namespace KelimeDefteri.Controllers
             else
                 return RedirectToPage("/ErrorPage", new { errorMessage = "Silmek istediğiniz kayıt mevcut değil!", returnPage = "/Defter/Homepage" });
 
-            return RedirectToAction(returnAction, routeValues: returnAction);
+            return RedirectToAction(returnAction, new {deletedRecordDate = deletedRecordDate});
         }
     }
 }
