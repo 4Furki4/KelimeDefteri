@@ -2,19 +2,39 @@
 
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 
-<div class="container p-3 mt-3">
-    <div class="bg-dark">
-        <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
-            <ul class="list-group p-3 mb-3">
-                    <li class="list-group-item active mt-3" aria-current="true" style="background-color:#901aff; border-color:#901aff">@Model.Name</li>
-                    @foreach (var def in Model.Definitions)
-                    {
-                        <li class="list-group-item d-inline-flex" style="background-color:antiquewhite">
-                            <div class="col-2">@def.definitionType</div>
-                            @def.definition
-                        </li>
-                    }    
-            </ul>
-        </div>
-    </div>
+@*INPUT WILL BE ADDED TO UPDATE WORD VALUES*@
+
+<div class="container mt-5 bg-black">
+        <form method="post">
+            <div class="row">
+            <div class="offset-2 col-3">
+                <input class="form-control" value="@Model.Name" type="text" asp-for="Name" />
+            </div>
+            @for (int i = 0; i < Model.Definitions.Count; i++)
+            {
+                
+                if (i<1)
+                {
+                    <div class="col-4">
+                        <input class="form-control" value="@Model.Definitions[i].definition" />
+                    </div>
+                }
+                else
+                {
+                    <div class="ms-0 row mt-1">
+                        <div class="offset-5 col-4">
+                            <input class="form-control" value="@Model.Definitions[i].definition" />
+                        </div>
+                    </div>
+                }
+                
+
+            }
+            @foreach (var def in Model.Definitions)
+            {
+                
+            }
+            </div>
+            
+        </form>
 </div>

@@ -136,7 +136,7 @@ namespace KelimeDefteri.Controllers
             {
                 Word word = await context.Words.Include(w=>w.Definitions).FirstAsync(w=>w.Id == id);
                 wordVM.Name = word.Name;
-                wordVM.Definitions = word.Definitions;
+                wordVM.Definitions = word.Definitions.ToList();
             }
             catch (Exception)
             {

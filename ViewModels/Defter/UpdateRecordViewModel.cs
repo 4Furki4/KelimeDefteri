@@ -28,7 +28,7 @@ namespace KelimeDefteri.ViewModels.Defter
 
         public int RecordID { get; set; }
         public Record? Record { get; set; }
-        public ICollection<Definition> Definitions { get; set; }
+        public List<Definition> Definitions { get; set; } = new List<Definition>();
     }
 
     public class DefinitionUpdateViewModel
