@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FJtNJawBxc8C7+E8AhSy+1ax5psfcEvj4xlOc/jWbw4=",
+  "Hash": "/KVxKbXrTiccYV3m1lQtZ5nGS5ceB4u8FXxm/t5bYC8=",
   "Source": "KelimeDefteri",
   "BasePath": "_content/KelimeDefteri",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\CustomJavaScript\\newInputForDefinitionAndType.js",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "CustomJavaScript/newInputForDefinitionAndType.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CustomJavaScript\\newInputForDefinitionAndType.js"
+    },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
       "SourceId": "KelimeDefteri",
