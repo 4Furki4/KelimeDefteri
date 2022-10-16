@@ -1,6 +1,6 @@
 ﻿namespace KelimeDefteri.ViewModels
 {
-    public class PagingInfo
+    public class PagingInfo //ViewModel for pagination tagHelper, see PaginateTagHelper where this class is used.
     {
         public int TotalItems { get; set; }
         public int ItemsPerPage { get; set; }

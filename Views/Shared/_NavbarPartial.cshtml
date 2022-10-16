@@ -1,6 +1,11 @@
 ﻿@model PathString
 <nav class="navbar sticky-top navbar-expand-lg d-block text-black" style="background-color:#8F00FF">
     <span class="navbar-brand mb-0 ms-2 h1">Kelime Defteri</span>
+    
+    @if (Model != "/Defter/Homepage" && Model != "/")
+    {
+        <a class="navbar-brand text-black" asp-action="Homepage" asp-controller="Defter">Ana Sayfa</a>
+    }
     @if (Model != "/Defter/AllRecord")
     {
         <a class="navbar-brand text-black" asp-action="AllRecord" asp-controller="Defter">Tüm Kelimeler</a>
@@ -9,10 +14,7 @@
     {
         <a class="navbar-brand text-black" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
     }
-    @if (Model != "/Defter/Homepage" && Model != "/")
-    {
-        <a class="navbar-brand text-black" asp-action="Homepage" asp-controller="Defter">Anasayfa</a>
-    }@if (!Model.ToString().Contains("/Defter/RecordDetail"))
+    @if (!Model.ToString().Contains("/Defter/RecordDetail"))
     {
         
     }
