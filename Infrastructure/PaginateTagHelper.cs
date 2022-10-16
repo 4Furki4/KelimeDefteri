@@ -21,7 +21,11 @@ namespace KelimeDefteri.Infrastructure
         public ViewContext? ViewContext { get; set; }
         public PagingInfo PageModel { get; set; }
         public string? PageAction { get; set; }
-       
+        public bool IsPageClassesEnabled { get; set; } = false;
+        public string PageClass { get; set; } = string.Empty;
+        public string PageClassNormal { get; set; } = string.Empty;
+        public string PageClassSelected { get; set; } = string.Empty;
+        
     public int MyProperty { get; set; }
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
@@ -30,11 +34,15 @@ namespace KelimeDefteri.Infrastructure
             {
                 IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
                 TagBuilder result = new("div");
-                for (int i = 0; i < PageModel.TotalPages; i++)
+                for (int i = 1; i <= PageModel.TotalPages; i++)
                 {
                     TagBuilder tag = new("a"); //Create anchor elements with amount of total page.
                     tag.Attributes["href"] = urlHelper.Action(PageAction, new { recordPage = i }); // Create url with PageAction and page number
-                    
+                    if (IsPageClassesEnabled)
+                    {
+                        tag.AddCssClass(PageClass);
+                        tag.AddCssClass(i == PageModel.CurrentPage ? PageClassSelected : PageClassNormal);
+                    }
                     tag.InnerHtml.Append(i.ToString()); 
                     result.InnerHtml.AppendHtml(tag);
                     
