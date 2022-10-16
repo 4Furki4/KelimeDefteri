@@ -23,6 +23,11 @@ app.UseStaticFiles();
 
 app.MapRazorPages();
 
-app.MapControllerRoute("defter", "{controller=Defter}/{action=Homepage}/{id?}");
+//Pagination route.
+app.MapControllerRoute("pagination", "AllRecord/Page{recordPage}", new { Controller = "Defter", Action = "AllRecord" }); 
+
+app.MapControllerRoute("default", "{controller=Defter}/{action=Homepage}");
+
+
 
 app.Run();
