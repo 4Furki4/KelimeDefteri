@@ -40,6 +40,7 @@ namespace KelimeDefteri.Infrastructure
                     tag.Attributes["href"] = urlHelper.Action(PageAction, new { recordPage = i }); // Create url with PageAction and page number
                     if (IsPageClassesEnabled)
                     {
+                        tag.Attributes["style"] = i != PageModel.CurrentPage ? "background-color:#8F00FF; border-0:#8F00FF" : "";
                         tag.AddCssClass(PageClass);
                         tag.AddCssClass(i == PageModel.CurrentPage ? PageClassSelected : PageClassNormal);
                     }
