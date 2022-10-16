@@ -1,0 +1,20 @@
+﻿@model WordUpdateViewModel
+
+<partial name="_NavbarPartial" model="@Context.Request.Path" />
+
+<div class="container p-3 mt-3">
+    <div class="bg-dark">
+        <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
+            <ul class="list-group p-3 mb-3">
+                    <li class="list-group-item active mt-3" aria-current="true" style="background-color:#901aff; border-color:#901aff">@Model.Name</li>
+                    @foreach (var def in Model.Definitions)
+                    {
+                        <li class="list-group-item d-inline-flex" style="background-color:antiquewhite">
+                            <div class="col-2">@def.definitionType</div>
+                            @def.definition
+                        </li>
+                    }    
+            </ul>
+        </div>
+    </div>
+</div>

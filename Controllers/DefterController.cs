@@ -130,21 +130,20 @@ namespace KelimeDefteri.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            UpdateRecordViewModel updateVM = new();
+            WordUpdateViewModel wordVM = new();
 
             try
             {
-                Record record = await context.Records.Include(r => r.Words).ThenInclude(w => w.Definitions).FirstAsync(rec => rec.Id == id);
-                updateVM.Id = record.Id;
-                updateVM.Words = record.Words;
-                updateVM.date = record.date;
+                Word word = await context.Words.Include(w=>w.Definitions).FirstAsync(w=>w.Id == id);
+                wordVM.Name = word.Name;
+                wordVM.Definitions = word.Definitions;
             }
             catch (Exception)
             {
                 return RedirectToPage("/ErrorPage", new { errorMessage = "Güncellemek istediğiniz kayıt mevcut değil", returnPage = "/Defter/Homepage" });
             }
 
-            return View(updateVM);
+            return View(wordVM);
         }
         
     }
