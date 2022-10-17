@@ -126,5 +126,25 @@ namespace KelimeDefteri.Controllers
             // If record is successfully deleted, then redirect to given action with deletedRecordDate
             return RedirectToAction(returnAction, new {deletedRecordDate = deletedRecordDate});
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            WordUpdateViewModel wordVM = new();
+
+            try
+            {
+                Word word = await context.Words.Include(w=>w.Definitions).FirstAsync(w=>w.Id == id);
+                wordVM.Name = word.Name;
+                wordVM.Definitions = word.Definitions.ToList();
+            }
+            catch (Exception)
+            {
+                return RedirectToPage("/ErrorPage", new { errorMessage = "Güncellemek istediğiniz kayıt mevcut değil", returnPage = "/Defter/Homepage" });
+            }
+
+            return View(wordVM);
+        }
+        
     }
 }

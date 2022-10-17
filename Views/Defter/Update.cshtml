@@ -1,0 +1,40 @@
+﻿@model WordUpdateViewModel
+
+<partial name="_NavbarPartial" model="@Context.Request.Path" />
+
+@*INPUT WILL BE ADDED TO UPDATE WORD VALUES*@
+
+<div class="container mt-5 bg-black">
+        <form method="post">
+            <div class="row">
+            <div class="offset-2 col-3">
+                <input class="form-control" value="@Model.Name" type="text" asp-for="Name" />
+            </div>
+            @for (int i = 0; i < Model.Definitions.Count; i++)
+            {
+                
+                if (i<1)
+                {
+                    <div class="col-4">
+                        <input class="form-control" value="@Model.Definitions[i].definition" />
+                    </div>
+                }
+                else
+                {
+                    <div class="ms-0 row mt-1">
+                        <div class="offset-5 col-4">
+                            <input class="form-control" value="@Model.Definitions[i].definition" />
+                        </div>
+                    </div>
+                }
+                
+
+            }
+            @foreach (var def in Model.Definitions)
+            {
+                
+            }
+            </div>
+            
+        </form>
+</div>

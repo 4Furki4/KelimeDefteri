@@ -7,7 +7,7 @@
     <form asp-action="AddRecord" method="post" class="bg-secondary p-2 border-bottom border-dark">
         <div class="row py-2">
             <div class="col-2">
-                <input type="date" class="form-control bg-secondary border-warning" asp-for="Date"  />
+                <input type="date" class="form-control bg-secondary" style="border-color:aqua" asp-for="Date"  />
             </div>
         </div>
         @for (int i = 0; i < 4; i++)
@@ -27,6 +27,3 @@
         <div class="text-center"><button class="btn mt-2 fw-normal text-black px-4" style="background-color:#8F00FF">Ekle</button></div>
     </form>
 </div>
-<div class="container mt-5 text-warning mt-5">
-    <vc:deneme />
-</div>        
