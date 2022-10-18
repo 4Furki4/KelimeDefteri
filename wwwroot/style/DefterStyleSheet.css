@@ -1,0 +1,14 @@
+﻿body {
+    background-color: #181A1B;
+}
+
+#lastItemComponentContainer {
+    box-shadow: 0px 1px 4px 4px #26142a;
+}
+
+.HomeAnchorButtons{
+    background-color:#620277; 
+    color:#DDDAD6; 
+    width:200px; 
+    height:50px
+}

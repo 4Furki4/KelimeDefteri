@@ -9,11 +9,11 @@
                 <ul class="list-group p-3 mb-3">
                     @foreach (var Word in Record.Words)
                     {
-                        <li class="list-group-item active mt-3" aria-current="true" style="background-color:#620277; border-color:#620277">@Word.Name</li>
+                        <li class="list-group-item active mt-3 bg-gradient shadow-lg" aria-current="true" style="background-color:#620277; border-color:#620277">@Word.Name</li>
                         @foreach (Definition definition in Word.Definitions)
                         {
 
-                            <li class="list-group-item d-inline-flex" style="background-color:antiquewhite">
+                            <li class="list-group-item d-inline-flex bg-gradient" style="background-color:gray">
                                 <div class="col-2">
                                     @if (Word.Definitions.Count > 1)
                                     {

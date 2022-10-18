@@ -20,14 +20,14 @@
 }   
 <div class="p-2 pb-5" style="">
     <div class="row mt-3 mb-3">
-        <h1 class="display-1 text-center" style="font-weight:600; color:#DDDAD6">Kelime Defteri Ana Sayfası</h1>
+        <h1 class="display-2 text-center" style="font-weight:600; color:#DDDAD6;">Kelime Defteri Ana Sayfası</h1>
     </div>
     <div class="container">
-        
-            <div class="border border-0 rounded-3" style="">
+
+        <div class="border border-0 rounded-3 shadow-lg" style="background-color:#191b1c">
                 @*Jumbotron with info about app*@
-            <div class="jumbotron ps-2 pe-2 pb-3" style="color:#DDDAD6; box-shadow: 0px 0px 1px 1px #26142a;">
-                    <h1 class="display-3 fw-bold">Selam Kelimesever!</h1>
+            <div class="jumbotron ps-3 pe-2 pb-3" style="color:#DDDAD6; box-shadow: 0px 0px 1px 3px #26142a">
+                    <h1 class="display-4 fw-bold">Selam Kelimesever!</h1>
                     <p class="lead fs-3 fw-bold py-2" >Bu uygulama sayesinde her gün 4 tane, sevdiğin ve öğrenmek istediğin kelimeyi kaydedebilirsin.</p>
                     <h1 class="mt-2">Şu ana kadar eklediğin kelime sayısı: @Model.TotalWordCount</h1>
                     <h1 class="mt-2 mb-4 py-2">Şu ana kadar kelime eklediğin gün sayısı: @Model.TotalRecordCount</h1>
@@ -44,7 +44,7 @@
                                                 placeholder="Kelime veya tarih (GG/AA/YYYY) ile arama"
                                                 asp-for="searchInput" 
                                                 />
-                                                <button class="btn btn-warning border-start-0 text-black shadow-lg" style="margin-left:1px">Ara</button>
+                                                <button class="btn btn-dark border-start-0 bg-gradient shadow-lg" style="margin-left:1px; background-color:#620277">Ara</button>
                                             </div>
                                         </div>
                                     </form>
@@ -52,8 +52,8 @@
                             </div>
                             @*Anchor buttons that redirects to AllRecords and AddRecord pages*@
                             <div class="text-center mb-3 mt-3">
-                        <a style="background-color:#620277; color:#DDDAD6" class="col-3 btn btn-dark btn-lg border-0 px-5 shadow-sm" role="button" asp-action="AllRecord" asp-route-recordPage="1">Tüm Kelimere Git</a>
-                        <a style="background-color:#620277; color:#DDDAD6" class="col-3 btn btn-dark btn-lg border-0 shadow-sm" role="button" asp-action="AddRecord">Kelime Ekle</a>
+                        <a class="btn btn-dark btn-lg border-0 bg-gradient shadow-lg HomeAnchorButtons" role="button" asp-action="AllRecord" asp-route-recordPage="1">Tüm Kelimere Git</a>
+                        <a class="ms-sm-4 btn btn-dark btn-lg border-0 bg-gradient shadow-lg HomeAnchorButtons" role="button" asp-action="AddRecord">Kelime Ekle</a>
                             </div>
                         </div>
                 </div>

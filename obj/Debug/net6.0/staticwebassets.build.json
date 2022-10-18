@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/KVxKbXrTiccYV3m1lQtZ5nGS5ceB4u8FXxm/t5bYC8=",
+  "Hash": "dN5WO3mGG3yhxslf6ThpHByi1nvyG/MwH6BZBUJxTg0=",
   "Source": "KelimeDefteri",
   "BasePath": "_content/KelimeDefteri",
   "Mode": "Default",
@@ -2225,6 +2225,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\style\\DefterStyleSheet.css",
+      "SourceId": "KelimeDefteri",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\4Furki4\\KelimeDefteri\\wwwroot\\",
+      "BasePath": "_content/KelimeDefteri",
+      "RelativePath": "style/DefterStyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style\\DefterStyleSheet.css"
     }
   ]
 }

@@ -1,18 +1,18 @@
 ﻿@model PathString
-<nav class="navbar sticky-top navbar-expand-lg d-block text-white" style="background-color:#181A1B; box-shadow: 0px 1px 1px 3px #26142a;">
-    <span class="navbar-brand mb-0 ms-2 h1">Kelime Defteri</span>
+<nav class="navbar sticky-top navbar-expand-lg d-block text-white bg-gradient" style="background-color:#620277; box-shadow: 0px 1px 1px 4px #26142a;">
+    <span class="navbar-brand mb-0 h1 d-sm-inline-block offset-4 offset-sm-1 col-sm-3 col-md-4 offset-md-1 offset-lg-1 ms-lg-2 col-lg-4 col-xl-1">Kelime Defteri</span>
     
     @if (Model != "/Defter/Homepage" && Model != "/")
     {
-        <a class="navbar-brand text-white" asp-action="Homepage" asp-controller="Defter">Ana Sayfa</a>
+        <a class="navbar-brand text-white d-none d-sm-inline-block col-sm-3 col-md-3 col-lg-4 col-xl-1" asp-action="Homepage" asp-controller="Defter">Ana Sayfa</a>
     }
     @if (Model != "/Defter/AllRecord")
     {
-        <a class="navbar-brand text-white" asp-action="AllRecord" asp-controller="Defter">Tüm Kelimeler</a>
+        <a class="navbar-brand text-white d-none d-sm-inline-block col-sm-3 col-md-3 col-lg-4 col-xl-1" asp-action="AllRecord" asp-controller="Defter">Tüm Kelimeler</a>
     }
     @if (Model != "/Defter/AddRecord")
     {
-        <a class="navbar-brand text-white" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
+        <a class="navbar-brand text-white d-none d-sm-inline-block col-sm-3 col-md-3 col-lg-3 col-xl-1" asp-action="AddRecord" asp-controller="Defter">Kelime Ekle</a>
     }
     @if (!Model.ToString().Contains("/Defter/RecordDetail"))
     {
