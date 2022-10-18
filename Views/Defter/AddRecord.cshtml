@@ -1,13 +1,13 @@
 ﻿@model CreateRecordViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 
-<h1 class="display-2 text-center mt-5 fw-bold fst-italic text-secondary">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
+<h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:black">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
 <div class="container position-fixed top-50 start-50 translate-middle">
 
     <form asp-action="AddRecord" method="post" class="bg-secondary p-2 border-bottom border-dark">
         <div class="row py-2">
             <div class="col-2">
-                <input type="date" class="form-control bg-secondary" style="border-color:aqua" asp-for="Date"  />
+                <input type="date" class="form-control bg-secondary" style="border-color:#9370DB" asp-for="Date" />
             </div>
         </div>
         @for (int i = 0; i < 4; i++)
@@ -24,6 +24,6 @@
                 </div>
             </div>
         }
-        <div class="text-center"><button class="btn mt-2 fw-normal text-black px-4" style="background-color:#8F00FF">Ekle</button></div>
+        <div class="text-center"><button class="btn mt-2 fw-normal text-black px-4" style="background-color:#9370DB">Ekle</button></div>
     </form>
 </div>

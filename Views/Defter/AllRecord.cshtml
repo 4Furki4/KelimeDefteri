@@ -1,7 +1,7 @@
 ﻿@model RecordListViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 <div class="container p-3 mt-5">
-    <div class="bg-dark">
+    <div class="shadow-lg" style="background-color:#191b1c">
         @foreach (var Record in Model.Records)
         {
             <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
@@ -9,7 +9,7 @@
                 <ul class="list-group p-3 mb-3">
                     @foreach (var Word in Record.Words)
                     {
-                        <li class="list-group-item active mt-3" aria-current="true" style="background-color:#8F00FF; border-color:#8F00FF">@Word.Name</li>
+                        <li class="list-group-item active mt-3" aria-current="true" style="background-color:#620277; border-color:#620277">@Word.Name</li>
                         @foreach (Definition definition in Word.Definitions)
                         {
 
