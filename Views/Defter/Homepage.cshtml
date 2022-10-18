@@ -44,7 +44,7 @@
                                                 placeholder="Kelime veya tarih (GG/AA/YYYY) ile arama"
                                                 asp-for="searchInput" 
                                                 />
-                                                <button class="btn btn-dark border-start-0 bg-gradient shadow-lg" style="margin-left:1px; background-color:#620277">Ara</button>
+                                                <button id="araBtn" class="btn btn-dark border-start-0 bg-gradient shadow-lg purpleBtnHover">Ara</button>
                                             </div>
                                         </div>
                                     </form>
@@ -52,8 +52,8 @@
                             </div>
                             @*Anchor buttons that redirects to AllRecords and AddRecord pages*@
                             <div class="text-center mb-3 mt-3">
-                        <a class="btn btn-dark btn-lg border-0 bg-gradient shadow-lg HomeAnchorButtons" role="button" asp-action="AllRecord" asp-route-recordPage="1">Tüm Kelimere Git</a>
-                        <a class="ms-sm-4 btn btn-dark btn-lg border-0 bg-gradient shadow-lg HomeAnchorButtons" role="button" asp-action="AddRecord">Kelime Ekle</a>
+                        <a class="btn btn-dark btn-lg border-0 bg-gradient shadow-lg HomeAnchorButtons purpleBtnHover" role="button" asp-action="AllRecord" asp-route-recordPage="1">Tüm Kelimere Git</a>
+                        <a class="ms-sm-4 btn btn-dark btn-lg border-0 bg-gradient shadow-lg HomeAnchorButtons purpleBtnHover" role="button" asp-action="AddRecord">Kelime Ekle</a>
                             </div>
                         </div>
                 </div>

@@ -39,3 +39,27 @@
 .recordArea {
     box-shadow: 0px 1px 1px 2px #26142a;
 }
+
+#araBtn {
+    margin-left: 1px;
+}
+
+#araBtn:hover {
+    
+}
+
+.navText {
+    color: white;
+}
+
+.navText:hover {
+    color: #181A1B;
+}
+
+.purpleBtnHover {
+    background-color: #620277
+}
+
+.purpleBtnHover:hover {
+    background-color: purple;
+}

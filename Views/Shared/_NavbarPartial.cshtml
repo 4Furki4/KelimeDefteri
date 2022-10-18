@@ -9,20 +9,21 @@
             d-none 
             px-xl-3 
             d-sm-inline-block 
-            col-sm-3 col-md-3 col-lg-4 col-xl-1" 
-            asp-action="Homepage" asp-controller="Defter">
-            Ana Sayfa
+            col-sm-3 col-md-3 col-lg-4 col-xl-1"
+       asp-action="Homepage" asp-controller="Defter">
+            <span class="navText">Ana Sayfa</span>
         </a>
     }
     @if (Model != "/Defter/AllRecord")
     {
         <a 
+            id:"recordNav"
             class="navbar-brand text-white 
             d-none 
             d-sm-inline-block
             col-sm-3 col-md-3 col-lg-4 col-xl-1" 
             asp-action="AllRecord" asp-controller="Defter">
-            Tüm Kelimeler
+            <span class="navText">Tüm Kelimeler</span>
         </a>
     }
     @if (Model != "/Defter/AddRecord")
@@ -34,7 +35,7 @@
             col-sm-3 
             col-md-3 col-lg-3 col-xl-1" 
             asp-action="AddRecord" asp-controller="Defter">
-            Kelime Ekle
+            <span class="navText">Kelime Ekle</span>
         </a>
     }
     @if (!Model.ToString().Contains("/Defter/RecordDetail"))
