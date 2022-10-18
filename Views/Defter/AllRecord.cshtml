@@ -1,19 +1,19 @@
 ﻿@model RecordListViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 <div class="container p-3 mt-5">
-    <div class="shadow-lg" style="background-color:#191b1c">
+    <div class="row shadow-lg" style="background-color:#191b1c">
         @foreach (var Record in Model.Records)
         {
-            <div class="text-white fw-bold fs-4 p-3 border-bottom border-secondary">
+            <div class="text-white fw-bold fs-4 recordArea">
                 @Record.date.ToShortDateString()
                 <ul class="list-group p-3 mb-3">
                     @foreach (var Word in Record.Words)
                     {
-                        <li class="list-group-item active mt-3 bg-gradient shadow-lg" aria-current="true" style="background-color:#620277; border-color:#620277">@Word.Name</li>
+                        <li class="list-group-item mt-3 bg-gradient shadow-lg listWord" aria-current="true">@Word.Name</li>
                         @foreach (Definition definition in Word.Definitions)
                         {
 
-                            <li class="list-group-item d-inline-flex bg-gradient" style="background-color:gray">
+                            <li class="list-group-item d-inline-flex bg-gradient listDef">
                                 <div class="col-2">
                                     @if (Word.Definitions.Count > 1)
                                     {
@@ -25,11 +25,10 @@
                             </li>
                         }
                     
-                    }
-                        
+                    }  
                 </ul>
                 <div class="text-center">
-                    <a asp-action="RecordDetail" asp-route-id="@Record.Id" class="btn btn-lg btn-outline-warning px-4">Detay</a>
+                    <a asp-action="RecordDetail" asp-route-id="@Record.Id" class="btn btn-lg btn-outline-warning px-4 mb-4">Detay</a>
                 </div>
             </div>
         }
