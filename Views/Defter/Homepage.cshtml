@@ -20,15 +20,15 @@
 }   
 <div class="p-2 pb-5 bg-dark">
     <div class="row mt-3 mb-3">
-        <h1 class="display-1 text-center text-secondary" style="font-weight:600">Kelime Defteri Ana Sayfası</h1>
+        <h1 class="display-1 text-center text-white" style="font-weight:600">Kelime Defteri Ana Sayfası</h1>
     </div>
     <div class="container">
         
             <div class="border border-0 rounded-3 bg-secondary">
                 @*Jumbotron with info about app*@
-                <div class="jumbotron text-secondary ps-3 pb-3" style="background-color:#152424">
+                <div class="jumbotron text-white ps-3 pb-3" style="background-color:#152424">
                     <h1 class="display-1 fw-normal">Selam Kelimesever!</h1>
-                    <p class="lead fw-bold">Bu uygulama sayesinde her gün 4 tane sevdiğin ve öğrenmek istediğin kelimeyi kaydedebilirsin.</p>
+                    <p class="lead fw-bold">Bu uygulama sayesinde her gün 4 tane, sevdiğin ve öğrenmek istediğin kelimeyi kaydedebilirsin.</p>
                     <hr class="my-4">
                     <h2>Şu ana kadar eklediğin kelime sayısı: @Model.TotalWordCount</h2>
                     <h2>Şu ana kadar kelime eklediğin gün sayısı: @Model.TotalRecordCount</h2>
@@ -46,7 +46,7 @@
                                                 placeholder="Kelime veya tarih (GG/AA/YYYY) ile arama"
                                                 asp-for="searchInput" 
                                                 />
-                                                <button class="btn btn-success border-start-0 text-black" style="margin-left:1px">Ara</button>
+                                                <button class="btn btn-warning border-start-0 text-black" style="margin-left:1px">Ara</button>
                                             </div>
                                         </div>
                                     </form>
@@ -54,8 +54,8 @@
                             </div>
                             @*Anchor buttons that redirects to AllRecords and AddRecord pages*@
                             <div class="text-center mb-3 mt-3">
-                                <a style="background-color:#8F00FF" class="col-3 btn btn-dark btn-lg border-0 text-black px-5" role="button" asp-action="AllRecord" asp-route-recordPage = "1">Tüm Kelimere Git</a>
-                                <a style="background-color:#8F00FF" class="col-3 btn btn-dark btn-lg border-0 text-black" role="button" asp-action="AddRecord">Kelime Ekle</a>
+                        <a style="background-color:#9370DB" class="col-3 btn btn-dark btn-lg border-0 text-black px-5" role="button" asp-action="AllRecord" asp-route-recordPage="1">Tüm Kelimere Git</a>
+                        <a style="background-color:#9370DB" class="col-3 btn btn-dark btn-lg border-0 text-black" role="button" asp-action="AddRecord">Kelime Ekle</a>
                             </div>
                         </div>
                 </div>
