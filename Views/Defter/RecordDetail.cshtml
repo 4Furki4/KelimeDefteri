@@ -7,13 +7,13 @@
             <ul class="list-group p-3 mb-3">
                 @foreach (var kelime in Model.Words)
                 {
-                    <li class="list-group-item listWord mt-3" aria-current="true">
+                    <li class="list-group-item listWord mt-3 bg-gradient shadow-lg" aria-current="true">
                         @kelime.Name
                         <a role="button" asp-action="Update" asp-route-id="@kelime.Id" class="btn btn-outline-warning px-5 float-end">GÜNCELLE</a>
                      </li>
                     @foreach (var tanim in kelime.Definitions)
                     {
-                        <li class="list-group-item d-inline-flex listDef" style="background-color:antiquewhite">
+                        <li class="list-group-item d-inline-flex listDef bg-gradient shadow-lg">
                             <div class="col-2">@tanim.definitionType</div>
                             @tanim.definition
                         </li>

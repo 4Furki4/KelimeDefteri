@@ -17,9 +17,9 @@
     height:50px
 }
 
-.listWord{
-    background-color:#620277;
-    border-color:#620277;
+.listWord {
+    background-color: #620277;
+    border-color: #620277;
 }
 
 
@@ -28,7 +28,8 @@
 }
 
 .navbar-bg-shadow {
-    background-color:#620277; box-shadow: 0px 1px 1px 4px #26142a;
+    background-color:#620277; 
+    box-shadow: 0px 1px 1px 4px #26142a;
 }
 
 
@@ -62,4 +63,12 @@
 
 .purpleBtnHover:hover {
     background-color: purple;
+}
+
+.custom-text-white {
+    color:#DDDAD6;
+}
+
+#homeJumbo {
+    box-shadow: 0px 0px 1px 3px #26142a
 }
