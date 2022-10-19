@@ -1,14 +1,14 @@
 ﻿@model PathString
-<nav class="navbar sticky-top navbar-expand-lg d-block text-white bg-gradient navbar-bg-shadow">
+<nav class="navbar sticky-top navbar-expand-lg d-block text-white " style="background-color:#181A1B; box-shadow: 0px 1px 4px 4px black;">
     <span class="navbar-brand mb-0 h1 d-sm-inline-block offset-4 offset-sm-1 col-sm-3 col-md-4 offset-md-1 offset-lg-1 ms-lg-2 col-lg-4 col-xl-1">Kelime Defteri</span>
     
     @if (Model != "/Defter/Homepage" && Model != "/")
     {
-        <a 
-            class="navbar-brand text-white 
-            d-none 
-            px-xl-3 
-            d-sm-inline-block 
+        <a
+            class="navbar-brand text-white
+            d-none
+            px-xl-3
+            d-sm-inline-block
             col-sm-3 col-md-3 col-lg-4 col-xl-1"
        asp-action="Homepage" asp-controller="Defter">
             <span class="navText">Ana Sayfa</span>
@@ -16,30 +16,30 @@
     }
     @if (Model != "/Defter/AllRecord")
     {
-        <a 
-            id:"recordNav"
-            class="navbar-brand text-white 
-            d-none 
+        <a
+            id="recordNav"
+            class="navbar-brand text-white
+            d-none
             d-sm-inline-block
-            col-sm-3 col-md-3 col-lg-4 col-xl-1" 
+            col-sm-3 col-md-3 col-lg-4 col-xl-1"
             asp-action="AllRecord" asp-controller="Defter">
             <span class="navText">Tüm Kelimeler</span>
         </a>
     }
     @if (Model != "/Defter/AddRecord")
     {
-        <a 
-            class="navbar-brand text-white 
-            d-none 
-            d-sm-inline-block 
-            col-sm-3 
-            col-md-3 col-lg-3 col-xl-1" 
+        <a
+            class="navbar-brand text-white
+            d-none
+            d-sm-inline-block
+            col-sm-3
+            col-md-3 col-lg-3 col-xl-1"
             asp-action="AddRecord" asp-controller="Defter">
             <span class="navText">Kelime Ekle</span>
         </a>
     }
     @if (!Model.ToString().Contains("/Defter/RecordDetail"))
     {
-        
+
     }
 </nav>

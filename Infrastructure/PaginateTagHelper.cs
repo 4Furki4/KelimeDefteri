@@ -38,18 +38,15 @@ namespace KelimeDefteri.Infrastructure
                     tag.Attributes["href"] = urlHelper.Action(PageAction, new { recordPage = i }); // Create url with PageAction and page number
                     if (IsPageClassesEnabled) // Configure classes if enabled
                     {
-                        tag.Attributes["style"] = i != PageModel.CurrentPage ? "background-color:#8F00FF; border-0:#8F00FF" : ""; // Custom background color for selected and normal buttons.
+                        tag.Attributes["style"] = i != PageModel.CurrentPage ? "background-color:#620277; border-0:#8F00FF" : ""; // Custom background color for selected and normal buttons.
                         tag.AddCssClass(PageClass);
                         tag.AddCssClass(i == PageModel.CurrentPage ? PageClassSelected : PageClassNormal);
                     }
-                    tag.InnerHtml.Append(i.ToString()); 
+                    tag.InnerHtml.Append(i.ToString());
                     result.InnerHtml.AppendHtml(tag);
-                    
                 }
                 output.Content.AppendHtml(result.InnerHtml);
             }
-            
-            
         }
     }
 }

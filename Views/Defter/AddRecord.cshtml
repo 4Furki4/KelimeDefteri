@@ -1,29 +1,29 @@
 ﻿@model CreateRecordViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 
-<h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:black">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
+<h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:white">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
 <div class="container position-fixed top-50 start-50 translate-middle">
 
-    <form asp-action="AddRecord" method="post" class="bg-secondary p-2 border-bottom border-dark">
+    <form asp-action="AddRecord" method="post" class="p-2 addInputsShadow">
         <div class="row py-2">
             <div class="col-2">
-                <input type="date" class="form-control bg-secondary" style="border-color:#9370DB" asp-for="Date" />
+                <input type="date" class="form-control" style="border-color:#9370DB" asp-for="Date" />
             </div>
         </div>
         @for (int i = 0; i < 4; i++)
         {
             <div class="row mb-2">
                 <div class="col-2 ">
-                    <input type="text" class="form-control border-0 text-white fw-bold darkslategrey" placeholder="Sözcük ismi..." asp-for="WordNames[i]" />
+                    <input type="text" class="form-control border-0 fw-bold darkslategrey" placeholder="Sözcük ismi..." asp-for="WordNames[i]" />
                 </div>
                 <div class="offset-1 col">
-                    <input type="text"  class="form-control border-0 text-white darkslategrey" placeholder="Sözcük Tanımı..." asp-for="WordDefs[i]" />
+                    <input type="text"  class="form-control border-0 darkslategrey" placeholder="Sözcük Tanımı..." asp-for="WordDefs[i]" />
                 </div>
                 <div class="col-2 offset-1">
-                    <input type="text"  class="form-control border-0 text-white darkslategrey" placeholder="Sözcük Türü..." asp-for="WordTypes[i]">
+                    <input type="text"  class="form-control border-0 darkslategrey" placeholder="Sözcük Türü..." asp-for="WordTypes[i]">
                 </div>
             </div>
         }
-        <div class="text-center"><button class="btn mt-2 fw-normal text-black px-4" style="background-color:#9370DB">Ekle</button></div>
+        <div class="text-center"><button class="btn mt-2 fw-normal text-black px-4 purpleBtnHover" >Ekle</button></div>
     </form>
 </div>

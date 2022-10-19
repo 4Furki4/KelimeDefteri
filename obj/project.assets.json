@@ -2014,19 +2014,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\KelimeDefteri.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\4Furki4\\KelimeDefteri\\KelimeDefteri.csproj",
       "projectName": "KelimeDefteri",
-      "projectPath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\KelimeDefteri.csproj",
-      "packagesPath": "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteri\\obj\\",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\4Furki4\\KelimeDefteri\\KelimeDefteri.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\4Furki4\\KelimeDefteri\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Furkan Cengiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

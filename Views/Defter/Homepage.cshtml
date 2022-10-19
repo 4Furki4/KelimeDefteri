@@ -20,11 +20,11 @@
 }   
 <div class="p-2 pb-5" style="">
     <div class="row my-5">
-        <h1 class="display-2 text-center custom-text-white" style="font-weight:600;">Kelime Defteri Ana Sayfası</h1>
+        <h1 class="display-2 text-center custom-text-white" style="font-weight:600; color:#DDDAD6">Kelime Defteri Ana Sayfası</h1>
     </div>
     <div class="container">
 
-        <div class="border border-0 rounded-3 shadow-lg" style="background-color:#191b1c">
+        <div id="custom-text-white" class="border border-0 rounded-3 shadow-lg custom-text-white" style="background-color:#191b1c"> @*custom-text-white not working !*@
                 @*Jumbotron with info about app*@
             <div id="homeJumbo" class="jumbotron ps-3 pe-2 pb-3 custom-text-white">
                     <h1 class="display-4 fw-bold">Selam Kelimesever!</h1>
@@ -42,7 +42,7 @@
                                             <div class="input-group">
                                                 <input type="search" class="form-control border-0 text-white" style="background-color:#181A1B" id="searchInput" 
                                                 placeholder="Kelime veya tarih (GG/AA/YYYY) ile arama"
-                                                asp-for="searchInput" 
+                                                asp-for="searchInput"
                                                 />
                                                 <button id="araBtn" class="btn btn-dark border-start-0 bg-gradient shadow-lg purpleBtnHover">Ara</button>
                                             </div>
@@ -63,7 +63,3 @@
         </div>
     </div>
 </div>
-<div class="container mt-5 text-white">
-    @*@await Component.InvokeAsync("LastRecord")*@
-    
-</div>            

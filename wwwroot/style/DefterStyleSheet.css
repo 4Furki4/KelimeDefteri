@@ -1,6 +1,9 @@
 ﻿body {
     background-color: #181A1B;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
+
+
 
 .mainPurple{
     background-color: #620277;
@@ -11,9 +14,9 @@
 }
 
 .HomeAnchorButtons{ /*button style and size in Homepage view */
-    background-color:#620277; 
-    color:#DDDAD6; 
-    width:200px; 
+    background-color:#620277;
+    color:#DDDAD6;
+    width:200px;
     height:50px
 }
 
@@ -28,13 +31,13 @@
 }
 
 .navbar-bg-shadow {
-    background-color:#620277; 
+    background-color:#620277;
     box-shadow: 0px 1px 1px 4px #26142a;
 }
 
 
 .darkslategrey {
-    background-color:darkslategrey
+    background-color:#26142a;
 }
 
 .recordArea {
@@ -46,7 +49,6 @@
 }
 
 #araBtn:hover {
-    
 }
 
 .navText {
@@ -54,7 +56,7 @@
 }
 
 .navText:hover {
-    color: #181A1B;
+    color: #620277;
 }
 
 .purpleBtnHover {
@@ -65,10 +67,14 @@
     background-color: purple;
 }
 
-.custom-text-white {
+#custom-text-white {
     color:#DDDAD6;
 }
 
 #homeJumbo {
     box-shadow: 0px 0px 1px 3px #26142a
+}
+
+.addInputsShadow {
+    box-shadow: 0px 1px 1px 4px #26142a;
 }
