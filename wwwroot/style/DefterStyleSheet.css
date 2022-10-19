@@ -30,11 +30,15 @@
     background-color:gray;
 }
 
-.navbar-bg-shadow {
-    background-color:#620277;
-    box-shadow: 0px 1px 1px 4px #26142a;
+.navbar-customs {
+    background-color: #181A1B;
+    box-shadow: 0px 1px 4px 4px black;
 }
 
+#navbarHeader {
+    color:#620277;
+    font-weight:800;
+}
 
 .darkslategrey {
     background-color:#26142a;
@@ -60,7 +64,7 @@
 }
 
 .purpleBtnHover {
-    background-color: #620277
+    background-color: #620277;
 }
 
 .purpleBtnHover:hover {

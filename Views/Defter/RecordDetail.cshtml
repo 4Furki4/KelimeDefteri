@@ -9,13 +9,13 @@
                 {
                     <li class="list-group-item listWord mt-3 bg-gradient shadow-lg" aria-current="true">
                         @kelime.Name
-                        <a role="button" asp-action="Update" asp-route-id="@kelime.Id" class="btn btn-outline-warning px-5 float-end">GÜNCELLE</a>
+                        <a role="button" asp-action="Update" asp-route-id="@kelime.Id" class="btn btn-outline-warning px-2 px-sm-5 float-end">GÜNCELLE</a>
                      </li>
                     @foreach (var tanim in kelime.Definitions)
                     {
-                        <li class="list-group-item d-inline-flex listDef bg-gradient shadow-lg">
-                            <div class="col-2">@tanim.definitionType</div>
-                            @tanim.definition
+                        <li class="list-group-item d-inline-flex listDef bg-gradient shadow-lg ">
+                            <div class="col-5 col-md-3">@tanim.definitionType</div>
+                            <span class="col-3 col-md">@tanim.definition</span>
                         </li>
                     }
                 }
