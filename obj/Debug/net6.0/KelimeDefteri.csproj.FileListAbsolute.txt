@@ -183,3 +183,7 @@ C:\Users\HP\source\repos\4Furki4\KelimeDefteri\obj\Debug\net6.0\KelimeDefteri.ge
 C:\Users\HP\source\repos\4Furki4\KelimeDefteri\obj\Debug\net6.0\ref\KelimeDefteri.dll
 C:\Users\HP\source\repos\4Furki4\KelimeDefteri\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteri\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\HP\source\repos\4Furki4\KelimeDefteri\obj\Debug\net6.0\KelimeDefteri.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\HP\source\repos\4Furki4\KelimeDefteri\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\HP\source\repos\4Furki4\KelimeDefteri\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\HP\source\repos\4Furki4\KelimeDefteri\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

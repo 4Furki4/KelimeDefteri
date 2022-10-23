@@ -1,10 +1,13 @@
-﻿@model CreateRecordViewModel
+﻿<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+@model CreateRecordViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
-
 <h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:white">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
 <div class="container position-fixed top-50 start-50 translate-middle">
 
     <form asp-action="AddRecord" method="post" class="p-2 addInputsShadow">
+        <div class="text-danger" asp-validation-summary="All"></div>
         <div class="row py-2">
             <div class="col-2">
                 <input type="date" class="form-control" style="border-color:#9370DB" asp-for="Date" />

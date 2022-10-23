@@ -1,4 +1,5 @@
 ﻿using KelimeDefteri.Models;
+using KelimeDefteri.Models.Validations;
 using KelimeDefteri.ViewModels;
 using KelimeDefteri.ViewModels.Defter;
 using Microsoft.AspNetCore.Mvc;
@@ -51,6 +52,13 @@ namespace KelimeDefteri.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel recordVM)
         {
+            RecordValidator validations = new RecordValidator();
+            var errors = validations.Validate(recordVM);
+            if (!errors.IsValid)
+            {
+                return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
+            }
+
             List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Get definitions for each word
             {
                 var boluk = model.WordDefs[x].Split(";").ToList(); // definitions are entered with semicolon between each def. That should be changed! 
