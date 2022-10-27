@@ -1,32 +1,81 @@
 ﻿<script src="~/jquery/jquery.min.js"></script>
 <script src="~/jquery-validate/jquery.validate.min.js"></script>
 <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="/CustomJavaScript/InputGeneration.js"></script>
+
+
 @model CreateRecordViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 <h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:white">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
-<div class="container position-fixed top-50 start-50 translate-middle">
 
-    <form asp-action="AddRecord" method="post" class="p-2 addInputsShadow">
-        <div class="text-danger" asp-validation-summary="All"></div>
-        <div class="row py-2">
-            <div class="col-2">
-                <input type="date" class="form-control" style="border-color:#9370DB" asp-for="Date" />
+
+<div id="container" class="container" asp-validation-summary="All">
+    <form asp-action="AddRecord" method="post">
+        <!-- First word's area starts -->
+        <input type="date" asp-for="Date" />
+        <div id="first-part" class="row mt-5">
+            <div class="row">
+                <div class="col-3" id="first-part-word">
+                    <input type="text" class="form-control mt-1" id="word0" placeholder="Kelime giriniz..." asp-for="WordName">
+                </div>
+                <div class="col-4" id="first-part-def">
+                    <input type="text" class="form-control mt-1" id="word0-def0" placeholder="Tanım giriniz..." asp-for="Definition.WordDefinition">
+                </div>
+                <div class="col-3" id="first-part-type">
+                    <input type="text" class="form-control mt-1" id="word0-type0" placeholder="Tür giriniz..." asp-for="Definition.WordDefinitionType">
+                </div>
+                <input id="first-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
         </div>
-        @for (int i = 0; i < 4; i++)
-        {
-            <div class="row mb-2">
-                <div class="col-2 ">
-                    <input type="text" class="form-control border-0 fw-bold darkslategrey" placeholder="Sözcük ismi..." asp-for="WordNames[i]" />
+        <!-- First word's area ends -->
+        <!-- Second word's area starts -->
+        <div id="second-part" class="row mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <input type="text" class="form-control mt-1" id="word1" placeholder="Kelime giriniz..." asp-for="WordName">
                 </div>
-                <div class="offset-1 col">
-                    <input type="text"  class="form-control border-0 darkslategrey" placeholder="Sözcük Tanımı..." asp-for="WordDefs[i]" />
+                <div class="col-4" id="second-part-def">
+                    <input type="text" class="form-control mt-1" id="word1-def0" placeholder="Tanım giriniz..." asp-for="Definition.WordDefinition" value="deneme">
                 </div>
-                <div class="col-2 offset-1">
-                    <input type="text"  class="form-control border-0 darkslategrey" placeholder="Sözcük Türü..." asp-for="WordTypes[i]">
+                <div class="col-3" id="second-part-type">
+                    <input type="text" class="form-control mt-1" id="word1-type0" placeholder="Tür giriniz..." asp-for="Definition.WordDefinitionType">
                 </div>
+                <input id="second-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
-        }
-        <div class="text-center"><button class="btn mt-2 fw-normal text-black px-4 purpleBtnHover" >Ekle</button></div>
+        </div>
+        <!-- Second word's area ends -->
+        <!-- Third word's area starts -->
+        <div id="third-part" class="row mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <input type="text" class="form-control mt-1" id="word2" placeholder="Kelime giriniz..." asp-for="WordName">
+                </div>
+                <div class="col-4" id="third-part-def">
+                    <input type="text" class="form-control mt-1" id="word2-def0" placeholder="Tanım giriniz..." asp-for="Definition.WordDefinition">
+                </div>
+                <div class="col-3" id="third-part-type">
+                    <input type="text" class="form-control mt-1" id="word2-type0" placeholder="Tür giriniz..." asp-for="Definition.WordDefinitionType">
+                </div>
+                <input id="third-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+            </div>
+        </div>
+        <!-- Third word's area ends -->
+        <!-- Fourth word's area starts -->
+        <div id="fourth-part" class="row mt-5">
+            <div class="row">
+                <div class="col-3">
+                    <input type="text" class="form-control mt-1" id="word3" placeholder="Kelime giriniz..." asp-for="WordName">
+                </div>
+                <div class="col-4" id="fourth-part-def">
+                    <input type="text" class="form-control mt-1" id="word3-def0" placeholder="Tanım giriniz..." asp-for="Definition.WordDefinition">
+                </div>
+                <div class="col-3" id="fourth-part-type">
+                    <input type="text" class="form-control mt-1" id="word3-type0" placeholder="Tür giriniz..." asp-for="Definition.WordDefinitionType">
+                </div>
+                <input id="fourth-part-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+            </div>
+        </div>
+        <!-- Fourth word's area ends -->
+        <input id="submitBtn" type="submit" class="btn btn-outline-secondary offset-5 col-1 mt-5" value="Ekle"/>
     </form>
 </div>

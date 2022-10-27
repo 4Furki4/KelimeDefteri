@@ -3,12 +3,31 @@
     public class CreateRecordViewModel
     {
         public DateTime Date { get; set; }
-        public List<string> WordNames { get; set; } = new List<string>();
-        public List<string> WordDefs { get; set; } = new List<string>();
-
-        public List<string> WordTypes { get; set; } = new List<string>();
-
-        public PathString PathString { get; set; } = PathString.Empty;
-
+        
+        public string WordName { get; set; }
+        public CreateWordDefinitionViewModel Definition { get; set; }
     }
+
+
+    public class CreateWordDefinitionViewModel
+    {
+        public string WordDefinition { get; set; }
+
+        public string WordDefinitionType { get; set; }
+    }
+
+    //public class CreateRecordWordViewModel
+    //{
+    //    public string Name { get; set; }
+
+    //    public CreateRecordDefinitionViewModel Definitions { get; set; }
+
+    //}
+
+    //public class CreateRecordDefinitionViewModel
+    //{
+    //    public string Definition { get; set; }
+
+    //    public string Type { get; set; }
+    //}
 }

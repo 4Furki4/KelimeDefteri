@@ -52,40 +52,46 @@ namespace KelimeDefteri.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel recordVM)
         {
-            RecordValidator validations = new RecordValidator();
-            var errors = validations.Validate(recordVM);
-            if (!errors.IsValid)
+            foreach (string key in Request.Form.Keys)
             {
-                return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
-            }
 
-            List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Get definitions for each word
-            {
-                var boluk = model.WordDefs[x].Split(";").ToList(); // definitions are entered with semicolon between each def. That should be changed! 
-                var boluk_tur = model.WordTypes[x].Split(";").ToList(); //Types have same logic with definitions BC their count must be equal
-                List<Definition> list = new List<Definition>();
-                for (int i = 0; i < boluk.Count; i++)
-                {
-                    list.Add(new Definition { definition = boluk[i], definitionType = boluk_tur[i] });
-                }
-                return list;
-            }         
+            }
+            //RecordValidator validations = new RecordValidator();
+            //var errors = validations.Validate(recordVM);
+            //if (!errors.IsValid)
+            //{
+            //    return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
+            //}
 
-            Record kayit = new Record();
-            kayit.date = recordVM.Date;
-            try
-            {
-                for (int i = 0; i < 4; i++) // If there is less than 4 words entered, exception thrown 
-                    kayit.Words.Add(new Word { Name = recordVM.WordNames[i], Definitions = GetDefinitions(i, recordVM) });
-            }
-            catch (Exception)
-            {
-                return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
-            }
-            await context.Records.AddAsync(kayit);
-            await context.SaveChangesAsync();
-            // Redirecting to added record's detail page
-            return RedirectToAction(nameof(RecordDetail), new {id = kayit.Id});
+            //List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Get definitions for each word
+            //{
+            //    var boluk = model.WordDefs[x].Split(";").ToList(); // definitions are entered with semicolon between each def. That should be changed! 
+            //    var boluk_tur = model.WordTypes[x].Split(";").ToList(); //Types have same logic with definitions BC their count must be equal
+            //    List<Definition> list = new List<Definition>();
+            //    for (int i = 0; i < boluk.Count; i++)
+            //    {
+            //        list.Add(new Definition { definition = boluk[i], definitionType = boluk_tur[i] });
+            //    }
+            //    return list;
+            //}         
+
+            //Record kayit = new Record();
+            //kayit.date = recordVM.Date;
+            //try
+            //{
+            //    for (int i = 0; i < 4; i++) // If there is less than 4 words entered, exception thrown 
+            //        kayit.Words.Add(new Word { Name = recordVM.WordNames[i], Definitions = GetDefinitions(i, recordVM) });
+            //}
+            //catch (Exception)
+            //{
+            //    return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
+            //}
+            //await context.Records.AddAsync(kayit);
+            //await context.SaveChangesAsync();
+            //// Redirecting to added record's detail page
+            //return RedirectToAction(nameof(RecordDetail), new {id = kayit.Id});
+
+            return View();
         }
 
         [HttpGet]
