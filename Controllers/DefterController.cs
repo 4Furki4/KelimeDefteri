@@ -4,6 +4,7 @@ using KelimeDefteri.ViewModels;
 using KelimeDefteri.ViewModels.Defter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Primitives;
 
 namespace KelimeDefteri.Controllers
 {
@@ -50,11 +51,16 @@ namespace KelimeDefteri.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromForm] CreateRecordViewModel recordVM)
+        public async Task<IActionResult> AddRecord([FromForm] NewRecordViewModel newInputs)
         {
             foreach (string key in Request.Form.Keys)
             {
 
+            }
+
+            foreach (string key in Request.Form.Keys)
+            {
+                Request.Form.TryGetValue(key, out StringValues value);
             }
             //RecordValidator validations = new RecordValidator();
             //var errors = validations.Validate(recordVM);
@@ -91,7 +97,7 @@ namespace KelimeDefteri.Controllers
             //// Redirecting to added record's detail page
             //return RedirectToAction(nameof(RecordDetail), new {id = kayit.Id});
 
-            return View();
+            return RedirectToAction(nameof(Homepage));
         }
 
         [HttpGet]
