@@ -14,24 +14,62 @@
         <div class="text-danger" asp-validation-summary="All"></div>
         <!-- First word's area starts -->
         <input type="date" asp-for="Date" />
-        @for (int i = 1; i < 5; i++)
-        {
-            <div id="part-@i" class="row mt-5">
-
+            <div id="part-1" class="row mt-5">
                 <div class="row">
-                    <div class="col-3" id="part-@i-word">
-                        <input type="text" class="form-control mt-1"  placeholder="Kelime giriniz..." asp-for="WordName">
+                    <div class="col-3" id="part-1-word">
+                        <input type="text" class="form-control mt-1"  placeholder="Kelime giriniz..." asp-for="WordName1">
                     </div>
-                    <div class="col-4" id="part-@i-def">
-                        <input type="text" class="form-control mt-1"  placeholder="Tanım giriniz..." asp-for="Definition">
+                    <div class="col-4" id="part-1-def">
+                        <input type="text" class="form-control mt-1"  placeholder="Tanım giriniz..." asp-for="Definition1">
                     </div>
-                    <div class="col-3" id="part-@i-type">
-                        <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type" data-val="true">
+                    <div class="col-3" id="part-1-type">
+                        <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type1" data-val="true">
                     </div>
-                    <input id="part-@i-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+                    <input id="part-1-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
                 </div>
             </div>
-        }
+        <div id="part-2" class="row mt-5">
+            <div class="row">
+                <div class="col-3" id="part-2-word">
+                    <input type="text" class="form-control mt-1" placeholder="Kelime giriniz..." asp-for="WordName2">
+                </div>
+                <div class="col-4" id="part-2-def">
+                    <input type="text" class="form-control mt-1" placeholder="Tanım giriniz..." asp-for="Definition2">
+                </div>
+                <div class="col-3" id="part-2-type">
+                    <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type2" data-val="true">
+                </div>
+                <input id="part-2-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+            </div>
+        </div>
+        <div id="part-3" class="row mt-5">
+            <div class="row">
+                <div class="col-3" id="part-3-word">
+                    <input type="text" class="form-control mt-1" placeholder="Kelime giriniz..." asp-for="WordName3">
+                </div>
+                <div class="col-4" id="part-3-def">
+                    <input type="text" class="form-control mt-1" placeholder="Tanım giriniz..." asp-for="Definition3">
+                </div>
+                <div class="col-3" id="part-3-type">
+                    <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type3" data-val="true">
+                </div>
+                <input id="part-3-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+            </div>
+        </div>
+        <div id="part-4" class="row mt-5">
+            <div class="row">
+                <div class="col-3" id="part-4-word">
+                    <input type="text" class="form-control mt-1" placeholder="Kelime giriniz..." asp-for="WordName4">
+                </div>
+                <div class="col-4" id="part-4-def">
+                    <input type="text" class="form-control mt-1" placeholder="Tanım giriniz..." asp-for="Definition4">
+                </div>
+                <div class="col-3" id="part-4-type">
+                    <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type4" data-val="true">
+                </div>
+                <input id="part-4-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+            </div>
+        </div>
         <input id="submitBtn" asp-action="AddRecord" type="submit" class="btn btn-outline-secondary offset-5 col-1 mt-5" value="Ekle" />
     </form>
 </div>

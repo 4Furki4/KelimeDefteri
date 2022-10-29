@@ -9,13 +9,40 @@ namespace KelimeDefteri.ViewModels.Defter
 
         [BindProperty]
         [Required]
-        public string WordName { get; set; }
+        public string WordName1 { get; set; }
         [BindProperty]
         [Required]
-        public string Definition { get; set; }
+        public string Definition1 { get; set; }
         [BindProperty]
         [Required]
-        public string Type { get; set; } 
+        public string Type1 { get; set; }
+        [BindProperty]
+        [Required]
+        public string WordName2 { get; set; }
+        [BindProperty]
+        [Required]
+        public string Definition2 { get; set; }
+        [BindProperty]
+        [Required]
+        public string Type2 { get; set; }
+        [BindProperty]
+        [Required]
+        public string WordName3 { get; set; }
+        [BindProperty]
+        [Required]
+        public string Definition3 { get; set; }
+        [BindProperty]
+        [Required]
+        public string Type3 { get; set; }
+        [BindProperty]
+        [Required]
+        public string WordName4 { get; set; }
+        [BindProperty]
+        [Required]
+        public string Definition4 { get; set; }
+        [BindProperty]
+        [Required]
+        public string Type4 { get; set; }
     }
 
 
