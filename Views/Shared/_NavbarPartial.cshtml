@@ -1,5 +1,10 @@
-﻿@model PathString
-<nav class="navbar sticky-top navbar-expand-lg d-block text-white navbar-customs custom-text-white">
+﻿<script src="~/jquery/jquery.min.js"></script>
+<script>
+        document.getElementById("mainNavbar").hidden = true;
+</script>
+
+@model PathString
+<nav id="mainNavbar" class="navbar sticky-top navbar-expand-lg d-block text-white navbar-customs custom-text-white">
     <span id="navbarHeader" class="navbar-brand mb-0 h1 d-sm-inline-block offset-4 offset-sm-1 col-sm-3 col-md-3 offset-md-1 offset-lg-1 ms-lg-2 col-lg-2 col-xl-1">Kelime Defteri</span>
     
     @if (Model != "/Defter/Homepage" && Model != "/")

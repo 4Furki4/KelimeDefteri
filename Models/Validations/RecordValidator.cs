@@ -7,9 +7,10 @@ namespace KelimeDefteri.Models.Validations
     {
         public RecordValidator()
         {
-            //RuleFor(rVM => rVM.WordNames).ForEach(item => item.NotEmpty().NotEqual(String.Empty).MinimumLength(2));
-            //RuleFor(rVM => rVM.WordDefs).ForEach(item => item.NotEmpty().NotEqual(String.Empty).MinimumLength(2));
-            //RuleFor(rVM => rVM.Date).NotNull().GreaterThan(DateTime.Now.Date);
+            RuleFor(rVM => rVM.WordName1).NotEmpty().WithMessage("1. Kelime boş olmamalı!").NotNull().MinimumLength(2).WithMessage("1. Kelime - Kelime uzunluğu en az 2 karakter olmalıdır! \n");
+            RuleFor(rVM => rVM.WordName2).NotEmpty().NotNull().MinimumLength(2).WithMessage("2. Kelime - Kelime uzunluğu en az 2 karakter olmalıdır! \n");
+            RuleFor(rVM => rVM.WordName3).NotEmpty().NotNull().MinimumLength(2).WithMessage("3. Kelime - Kelime uzunluğu en az 2 karakter olmalıdır! \n");
+            RuleFor(rVM => rVM.WordName3).NotEmpty().NotNull().MinimumLength(2).WithMessage("4. Kelime - Kelime uzunluğu en az 2 karakter olmalıdır! \n");
         }
     }
 }

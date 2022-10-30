@@ -1,9 +1,11 @@
-﻿using KelimeDefteri.Models;
+﻿using FluentValidation;
+using KelimeDefteri.Models;
 using KelimeDefteri.Models.Validations;
 using KelimeDefteri.ViewModels;
 using KelimeDefteri.ViewModels.Defter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.Primitives;
 
 namespace KelimeDefteri.Controllers
@@ -51,17 +53,47 @@ namespace KelimeDefteri.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddRecord([FromForm] NewRecordViewModel newInputs)
+        public async Task<IActionResult> AddRecord([FromForm] NewRecordViewModel newInputs, [FromForm] CreateRecordViewModel VM)
         {
-            foreach (string key in Request.Form.Keys)
-            {
+            //foreach (string key in Request.Form.Keys)
+            //{
 
-            }
+            //}
 
-            foreach (string key in Request.Form.Keys)
+            //foreach (string key in Request.Form.Keys)
+            //{
+            //    Request.Form.TryGetValue(key, out StringValues value);
+            //}
+            
+            
+            try
             {
-                Request.Form.TryGetValue(key, out StringValues value);
+                RecordValidator validations = new();
+                await validations.ValidateAndThrowAsync(VM);
             }
+            catch (ValidationException ex)
+            {
+                string errorMessages = "";
+                foreach (var error in ex.Errors)
+                {
+                    errorMessages += error.ErrorMessage;
+                }
+                return RedirectToPage("/ErrorPage", new { errorMessage = errorMessages, returnPage = HttpContext.Request.Path });
+            }
+            
+
+
+            
+            // get the first word and set it to a new word entity instance
+            // get the first word's definitions and types and set them to created word entities nav props.
+            // if any exists, get other def and types.
+
+
+            
+            
+            
+            
+            
             //RecordValidator validations = new RecordValidator();
             //var errors = validations.Validate(recordVM);
             //if (!errors.IsValid)
