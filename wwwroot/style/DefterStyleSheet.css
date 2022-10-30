@@ -98,8 +98,35 @@
 .validation-summary-errors {
     font-weight: bold;
     color: #f00;
+
 }
 
 .validation-summary-valid {
     display: none;
+}
+input[type="date"] {
+    -webkit-align-items: center;
+    display: -webkit-inline-flex;
+    font-family: monospace;
+    overflow:hidden;
+    padding: 5px;
+    border-radius: 8px;
+    border:none;
+    -webkit-padding-start: 1px;
+}
+
+input::-webkit-datetime-edit {
+    -webkit-flex: 1;
+    -webkit-user-modify: read-only !important;
+    display: inline-block;
+    min-width: 0;
+    margin-left:10px;
+    overflow: hidden;
+}
+
+input::-webkit-datetime-edit-fields-wrapper {
+    -webkit-user-modify: read-only !important;
+    display: inline-block;
+    padding: 1px 0;
+    white-space: pre;
 }

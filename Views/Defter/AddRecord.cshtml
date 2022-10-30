@@ -1,10 +1,7 @@
 ﻿<script src="~/jquery/jquery.min.js"></script>
 <script src="~/jquery-validate/jquery.validate.min.js"></script>
 <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-<script>
-    document.getElementById("WordName1-error").style.visibility = "hidden";
-</script>
-
+<script src="/CustomJavaScript/InputGeneration.js"></script>
 @model CreateRecordViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
 <h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:white">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
@@ -13,21 +10,21 @@
 <div id="container" class="container" >
     <form asp-action="AddRecord" method="post">
         <!-- First word's area starts -->
-        <input type="date" asp-for="Date" />
-        <div><span asp-validation-for="Date"></span></div>
+        <input id="dateInput" type="date" asp-for="Date" />
+        <div class="mt-1"><span asp-validation-for="Date"></span></div>
             <div id="part-1" class="row mt-5">
                 <div class="row">
                     <div class="col-3" id="part-1-word">
                         <input type="text" class="form-control mt-1"  placeholder="Kelime giriniz..." asp-for="WordName1">
-                    <div><span asp-validation-for="WordName1"></span></div>
+                        <div class="mt-1"><span asp-validation-for="WordName1"></span></div>
                     </div>
                     <div class="col-4" id="part-1-def">
                         <input type="text" class="form-control mt-1"  placeholder="Tanım giriniz..." asp-for="Definition1">
-                    <div><span asp-validation-for="Definition1"></span></div>
+                        <div class="mt-1"><span asp-validation-for="Definition1"></span></div>
                     </div>
                     <div class="col-3" id="part-1-type">
                         <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type1" data-val="true">
-                    <div><span asp-validation-for="Type1"></span></div>
+                        <div class="mt-1"><span asp-validation-for="Type1"></span></div>
                     </div>
                     <input id="part-1-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
                 </div>
@@ -37,15 +34,15 @@
             <div class="row">
                 <div class="col-3" id="part-2-word">
                     <input type="text" class="form-control mt-1" placeholder="Kelime giriniz..." asp-for="WordName2">
-                    <div><span asp-validation-for="WordName2"></span></div>
+                    <div class="mt-1"><span asp-validation-for="WordName2"></span></div>
                 </div>
                 <div class="col-4" id="part-2-def">
                     <input type="text" class="form-control mt-1" placeholder="Tanım giriniz..." asp-for="Definition2">
-                    <div><span asp-validation-for="Definition2"></span></div>
+                    <div class="mt-1"><span asp-validation-for="Definition2"></span></div>
                 </div>
                 <div class="col-3" id="part-2-type">
                     <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type2" data-val="true">
-                    <div><span asp-validation-for="Type2"></span></div>
+                    <div class="mt-1"><span asp-validation-for="Type2"></span></div>
                 </div>
                 <input id="part-2-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
@@ -54,15 +51,15 @@
             <div class="row">
                 <div class="col-3" id="part-3-word">
                     <input type="text" class="form-control mt-1" placeholder="Kelime giriniz..." asp-for="WordName3">
-                    <div><span asp-validation-for="WordName3"></span></div>
+                    <div class="mt-1"><span asp-validation-for="WordName3"></span></div>
                 </div>
                 <div class="col-4" id="part-3-def">
                     <input type="text" class="form-control mt-1" placeholder="Tanım giriniz..." asp-for="Definition3">
-                    <div><span asp-validation-for="Definition3"></span></div>
+                    <div class="mt-1"><span asp-validation-for="Definition3"></span></div>
                 </div>
                 <div class="col-3" id="part-3-type">
                     <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type3" data-val="true">
-                    <div><span asp-validation-for="Type3"></span></div>
+                    <div class="mt-1"><span asp-validation-for="Type3"></span></div>
                 </div>
                 <input id="part-3-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
@@ -71,15 +68,15 @@
             <div class="row">
                 <div class="col-3" id="part-4-word">
                     <input type="text" class="form-control mt-1" placeholder="Kelime giriniz..." asp-for="WordName4">
-                    <div><span asp-validation-for="WordName4"></span></div>
+                    <div class="mt-1"><span asp-validation-for="WordName4"></span></div>
                 </div>
                 <div class="col-4" id="part-4-def">
                     <input type="text" class="form-control mt-1" placeholder="Tanım giriniz..." asp-for="Definition4">
-                    <div><span asp-validation-for="Definition4"></span></div>
+                    <div class="mt-1"><span asp-validation-for="Definition4"></span></div>
                 </div>
                 <div class="col-3" id="part-4-type">
                     <input type="text" class="form-control mt-1" placeholder="Tür giriniz..." asp-for="Type4" data-val="true">
-                    <div><span asp-validation-for="Type4"></span></div>
+                    <div class="mt-1"><span asp-validation-for="Type4"></span></div>
                 </div>
                 <input id="part-4-btn" class="btn btn-dark mt-1" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
             </div>
@@ -87,4 +84,3 @@
         <input id="submitBtn" asp-action="AddRecord" type="submit" class="btn btn-outline-secondary offset-5 col-1 mt-5" value="Ekle" />
     </form>
 </div>
-<script src="/CustomJavaScript/InputGeneration.js"></script>
