@@ -23,18 +23,22 @@ namespace KelimeDefteri.ViewModels.Defter
         [MinLength(3, ErrorMessage = "Tanım en az 3 karakterden oluşmalı.")]
         [MaxLength(300)]
         public string Definition1 { get; set; } = String.Empty;
+
         [Required(ErrorMessage = "Lütfen tanım giriniz")]
         [MinLength(3, ErrorMessage = "Tanım en az 3 karakterden oluşmalı.")]
         [MaxLength(300)]
         public string Definition2 { get; set; } = String.Empty;
+
         [Required(ErrorMessage = "Lütfen tanım giriniz")]
         [MinLength(3, ErrorMessage = "Tanım en az 3 karakterden oluşmalı.")]
         [MaxLength(300)]
         public string Definition3 { get; set; } = String.Empty;
+
         [Required(ErrorMessage = "Lütfen tanım giriniz")]
         [MinLength(3, ErrorMessage = "Tanım en az 3 karakterden oluşmalı.")]
         [MaxLength(300)]
         public string Definition4 { get; set; } = String.Empty;
+
         [Required(ErrorMessage = "Lütfen tür giriniz")]
         [MinLength(2, ErrorMessage = "Tür en az 2 karakterden oluşmalı.")]
         [MaxLength(100, ErrorMessage = "Tür en fazla 100 karakterden oluşmalı")]
@@ -56,6 +60,7 @@ namespace KelimeDefteri.ViewModels.Defter
 
     public class NewRecordViewModel
     {
+        [Required]
         public List<string> newDefinition1 { get; set; } = new List<string>();
         public List<string> newDefinition2 { get; set; } = new List<string>();
         public List<string> newDefinition3 { get; set; } = new List<string>();

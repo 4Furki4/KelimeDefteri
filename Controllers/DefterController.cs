@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.Extensions.Primitives;
+using System.Globalization;
 
 namespace KelimeDefteri.Controllers
 {
@@ -55,17 +56,9 @@ namespace KelimeDefteri.Controllers
         [HttpPost]
         public async Task<IActionResult> AddRecord([FromForm] NewRecordViewModel newInputs, [FromForm] CreateRecordViewModel VM)
         {
-            //foreach (string key in Request.Form.Keys)
-            //{
 
-            //}
 
-            //foreach (string key in Request.Form.Keys)
-            //{
-            //    Request.Form.TryGetValue(key, out StringValues value);
-            //}
-            
-            
+            //Implement fluent validation rules
             try
             {
                 RecordValidator validations = new();
@@ -76,60 +69,42 @@ namespace KelimeDefteri.Controllers
                 string errorMessages = "";
                 foreach (var error in ex.Errors)
                 {
-                    errorMessages += error.ErrorMessage;
+                    errorMessages += error.ErrorMessage; //Get custom messages set in RecordValidator class
                 }
                 return RedirectToPage("/ErrorPage", new { errorMessage = errorMessages, returnPage = HttpContext.Request.Path });
             }
-            
+            Record record = new Record() { date = VM.Date };
+            for (int i = 1; i < 5; i++) // I am working on 4 words, so I can loop them 4 times and can use the variables to fetch the properties defined ViewModels.
+            {
+                #pragma warning disable CS8602 // Dereference of a possibly null reference.
+                Word word = new();
+                word.Name = VM.GetType()?.GetProperty($"WordName{i}")?.GetValue(VM)?.ToString()?.makeFirstCapitilized();
+                word.Definitions.Add                                //adding required definition and type inputs to its word.
+                (
+                    new Definition 
+                    { 
+                        definition = VM.GetType().GetProperty($"Definition{i}")?.GetValue(VM)?.ToString()?.makeFirstCapitilized(),
+                        definitionType = VM.GetType().GetProperty($"Type{i}")?.GetValue(VM)?.ToString()?.makeFirstCapitilized()
+                    }
+                );
+                
+                List<string>? newDefs = newInputs.GetType().GetProperty($"newDefinition{i}")?.GetValue(newInputs) as List<string>;      // get extra inputs for definitions as list of string
+                List<string>? newTypes = newInputs.GetType().GetProperty($"newType{i}")?.GetValue(newInputs) as List<string>;           // get extra inputs for types as list of string
+                #pragma warning restore CS8602 // Dereference of a possibly null reference.
 
+                if (newDefs.Any() && (newDefs.Contains(null) || newTypes.Contains(null))) // if user send blank extra definition inputs, redirect them to error page and show error message to them.
+                    return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen ek tanımlar eklerken ikisini de girin!", returnPage = HttpContext.Request.Path });
 
-            
-            // get the first word and set it to a new word entity instance
-            // get the first word's definitions and types and set them to created word entities nav props.
-            // if any exists, get other def and types.
+                for (int d = 0; d < newDefs.Count; d++)     // add new definition objects by newDefs count.
+                    word.Definitions.Add(new Definition { definition = newDefs[d], definitionType = newTypes[d] });
+                //Add each created word to record object
+                record.Words.Add(word);                      
+                
+            }
 
-
-            
-            
-            
-            
-            
-            //RecordValidator validations = new RecordValidator();
-            //var errors = validations.Validate(recordVM);
-            //if (!errors.IsValid)
-            //{
-            //    return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
-            //}
-
-            //List<Definition> GetDefinitions(int x, CreateRecordViewModel model) // Get definitions for each word
-            //{
-            //    var boluk = model.WordDefs[x].Split(";").ToList(); // definitions are entered with semicolon between each def. That should be changed! 
-            //    var boluk_tur = model.WordTypes[x].Split(";").ToList(); //Types have same logic with definitions BC their count must be equal
-            //    List<Definition> list = new List<Definition>();
-            //    for (int i = 0; i < boluk.Count; i++)
-            //    {
-            //        list.Add(new Definition { definition = boluk[i], definitionType = boluk_tur[i] });
-            //    }
-            //    return list;
-            //}         
-
-            //Record kayit = new Record();
-            //kayit.date = recordVM.Date;
-            //try
-            //{
-            //    for (int i = 0; i < 4; i++) // If there is less than 4 words entered, exception thrown 
-            //        kayit.Words.Add(new Word { Name = recordVM.WordNames[i], Definitions = GetDefinitions(i, recordVM) });
-            //}
-            //catch (Exception)
-            //{
-            //    return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen 4 kelimeyi eksiksiz girin!", returnPage = HttpContext.Request.Path });
-            //}
-            //await context.Records.AddAsync(kayit);
-            //await context.SaveChangesAsync();
-            //// Redirecting to added record's detail page
-            //return RedirectToAction(nameof(RecordDetail), new {id = kayit.Id});
-
-            return RedirectToAction(nameof(Homepage));
+            context.Records.Add(record);                    // then add the record to db. 
+            await context.SaveChangesAsync();
+            return RedirectToAction(nameof(RecordDetail), new { id = record.Id }); // redirect the user given correct inputs to the new record's detail page.
         }
 
         [HttpGet]
