@@ -181,10 +181,34 @@ namespace KelimeDefteri.Controllers
         }
         public async Task<IActionResult> Update(long id, UpdateVM updateVM)
         {
+            List<Definition> updatedDefs = new List<Definition>();
+            updatedDefs.Add(new() { definition = updateVM.Definition, definitionType = updateVM.Type });
+            if (updateVM.restOfDefs.Contains(null) || updateVM.restOfTypes.Contains(null))
+            {
+                return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen ek tanımlar eklerken ikisini de girin!", returnPage = HttpContext.Request.Path });
+            }
+            if (updateVM.restOfDefs.Any())
+            {
+                for (int i = 0; i < updateVM.restOfDefs.Count(); i++)
+                {
+                    updatedDefs.Add(
+                        new() 
+                        { 
+                            definition = updateVM.restOfDefs[i],
+                            definitionType = updateVM.restOfTypes[i]
+                        });
+                }
+            }
 
+            Word word = await context.Words.FirstAsync(w => w.Id == id);
 
+            word.Name = updateVM.Name;
 
-            return View();
+            word.Definitions = updatedDefs;
+
+            await context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(RecordDetail), new { id = word.RecordId });
         }
         
     }

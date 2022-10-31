@@ -18,6 +18,7 @@
 
 
         $("#addingBtn").on("click", function(){
+            console.log(alreadyAddedCount)
             addNewInputs(parseInt(alreadyAddedCount));
             alreadyAddedCount++;
         })
@@ -63,9 +64,10 @@
             </div>
             <input id="addingBtn" class="btn btn-dark" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
         </div>
+
+        <div id="inputContainer">
         @for (int i = 0; i < Model.restOfDefs.Count(); i++)
         {
-            <div id="inputContainer">
                 <div id="row-@i" class="row mb-3 inputrow">
                     <div class="offset-3 col-4">
                         <input class="form-control" asp-for="restOfDefs" value="@Model.restOfDefs[i]" />
@@ -75,8 +77,8 @@
                     </div>
                     <button id="delBtn-@i" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/images/icons8-trash-bin-50.png" width="25px" height="25px" alt=""></button>
                 </div>
-            </div>
         }
+        </div>
         <div class="text-center">
             <input type="submit" class="btn btn-outline-warning" asp-action="Update" asp-route-id="@Model.WordId" value="Güncelle" />
         </div>

@@ -9,7 +9,7 @@
     <div class="col-12">
 
             <a class="col-3 btn btn-warning border-1 border-0 btn-lg text-black" role="button" 
-            asp-action="@Model.ReturnAction" asp-controller="@Model.ReturnController">
+            asp-action="@Model.ReturnAction" asp-controller="@Model.ReturnController" asp-route-id="@Model.Id">
                 Önceki Sayfaya Dön
             </a>
     </div>
@@ -24,8 +24,11 @@
 
         public string ReturnController { get; set; } = string.Empty;
 
-        public string ReturnAction{ get; set; } = string.Empty;
+        public string ReturnAction { get; set; } = string.Empty;
 
+        public string? Id { get; set; }
+
+        public RouteValueDictionary keyValuePairs { get; set; } = new RouteValueDictionary();
 
         public void OnGet(string errorMessage, string returnPage) 
         {
@@ -33,6 +36,10 @@
             var s = returnPage.Substring(1).Split("/");
             ReturnController = s[0];
             ReturnAction = s[1];
+            if (s.Length>2)
+            {
+                Id = s[2];
+            }
         }
     }
 }
