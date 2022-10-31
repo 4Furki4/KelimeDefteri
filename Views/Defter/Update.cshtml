@@ -1,4 +1,53 @@
-﻿@model UpdateVM
+﻿<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script>
+    $("document").ready(function () {
+
+
+        $("form").hide().slideDown(1000);
+        let alreadyAddedCount = $(".inputrow").length;
+
+        for(let i=0; i<alreadyAddedCount; i++) {
+
+            $(`#delBtn-${i}`).on("click", function () {
+                $(`#row-${i}`).slideUp(1000).empty();
+             });
+        }
+
+
+
+        $("#addingBtn").on("click", function(){
+            addNewInputs(parseInt(alreadyAddedCount));
+            alreadyAddedCount++;
+        })
+
+        function addNewInputs(counter){
+            
+            console.log("addNewInputs fonctional..."); 
+            let row = `
+                    <div id="row-${counter}" class="row">
+                            <div class="offset-3 col-4" id="def-${counter}">
+                            <input type="text" class="form-control mt-1" id="def${counter}" placeholder="Tanım giriniz..." name="restOfDefs">
+                        </div>
+                        <div class="col-3" id="type-${counter}">
+                            <input type="text" class="form-control mt-1" id="type${counter}" placeholder="Tür giriniz..." name="restOfTypes">
+                        </div>
+                        <button id="delBtn-${counter}" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/images/icons8-trash-bin-50.png" width="25px" height="25px" alt=""></button>
+                    </div>`
+
+             $("#inputContainer").append(row);
+             $(`#row-${counter}`).hide().slideDown(1000);
+             $(`#delBtn-${counter}`).on("click", function () {
+                $(`#row-${counter}`).slideUp(1000).empty();
+             });
+        }
+        
+
+    });
+
+</script>
+@model UpdateVM
 <partial name="_NavbarPartial" model="Context.Request.Path" />
 <div class="container" style="margin-top: 200px">
     <form asp-action="UpdateRecord" method="post">
@@ -12,21 +61,24 @@
             <div class="col-3">
                 <input class="form-control" asp-for="Type" value="@Model.Type" />
             </div>
-            <input id="part-1-btn" class="btn btn-dark" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
+            <input id="addingBtn" class="btn btn-dark" type="button" value="Tanım Ekle" style="width: 120px; height: 40px;">
         </div>
         @for (int i = 0; i < Model.restOfDefs.Count(); i++)
         {
-            <div class="row mb-3">
-                <div class="offset-3 col-4">
-                    <input class="form-control" asp-for="restOfDefs" value="@Model.restOfDefs[i]" />
+            <div id="inputContainer">
+                <div id="row-@i" class="row mb-3 inputrow">
+                    <div class="offset-3 col-4">
+                        <input class="form-control" asp-for="restOfDefs" value="@Model.restOfDefs[i]" />
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" asp-for="restOfDefs" value="@Model.restOfTypes[i]" />
+                    </div>
+                    <button id="delBtn-@i" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/images/icons8-trash-bin-50.png" width="25px" height="25px" alt=""></button>
                 </div>
-                <div class="col-3">
-                    <input class="form-control" asp-for="restOfDefs" value="@Model.restOfTypes[i]" />
-                </div>
-            </div>    
+            </div>
+                
         }
     </form>
-
-
-
 </div>
+
+
