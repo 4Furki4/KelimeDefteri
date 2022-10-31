@@ -1,4 +1,5 @@
 ﻿using KelimeDefteri.Models;
+using System.Net.Http.Headers;
 
 namespace KelimeDefteri.ViewModels.Defter
 {
@@ -40,5 +41,21 @@ namespace KelimeDefteri.ViewModels.Defter
         public string definition { get; set; } = string.Empty;
 
         public string definitionType { get; set; } = string.Empty;
+    }
+
+
+
+
+    public class UpdateVM
+    {
+        public string Name { get; set; } = string.Empty;
+
+        public string Definition { get; set; } = string.Empty;
+
+        public string Type { get; set; } = string.Empty;
+
+        public List<string> restOfDefs { get; set; } = new List<string>();
+
+        public List<string> restOfTypes { get; set; } = new List<string>();
     }
 }

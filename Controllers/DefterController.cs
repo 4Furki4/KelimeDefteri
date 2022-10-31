@@ -155,21 +155,34 @@ namespace KelimeDefteri.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Update(int id)
+        public async Task<IActionResult> Update(long id)
         {
-            WordUpdateViewModel wordVM = new();
+            
 
-            try
-            {
-                Word word = await context.Words.Include(w=>w.Definitions).FirstAsync(w=>w.Id == id);
-                wordVM.Name = word.Name;
-                wordVM.Definitions = word.Definitions.ToList();
-            }
-            catch (Exception)
-            {
-                return RedirectToPage("/ErrorPage", new { errorMessage = "Güncellemek istediğiniz kayıt mevcut değil", returnPage = "/Defter/Homepage" });
-            }
+            var word = await context.Words.FindAsync(id);
+            UpdateVM wordVM = new() 
+            { 
+                Name = word.Name, 
+                Definition = word.Definitions.ToList()[0].definition, 
+                Type = word.Definitions.ToList()[0].definitionType 
+            };
 
+            /* word.Definitions.Count() > 1
+             * 
+
+            */
+
+            if (word.Definitions.Count() > 1)
+            {
+                foreach (var defs in word.Definitions)
+                {
+                    if (defs.definition != wordVM.Definition)
+                    {
+                        wordVM.restOfDefs.Add(defs.definition);
+                        wordVM.restOfTypes.Add(defs.definitionType);
+                    }
+                }
+            }
             return View(wordVM);
         }
         
