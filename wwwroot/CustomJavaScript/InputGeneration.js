@@ -6,7 +6,7 @@ $("document").ready(function () {
     $("#part-3").hide().slideDown(1000);
     $("#part-4").hide().slideDown(1000);
     $("#dateInput").hide().slideDown(1000);
-    $("#WordName1-error").slideDown
+    $("#ekleBtn").hide().slideDown();
     // int vars indicates how many times new inputs added. (I couldn't figure out how to decrease them when the one is deleted.)
     let firstBtnCount = 1;
     let secondBtnCount = 1;

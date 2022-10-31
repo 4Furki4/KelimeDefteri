@@ -157,20 +157,14 @@ namespace KelimeDefteri.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(long id)
         {
-            
-
             var word = await context.Words.FindAsync(id);
             UpdateVM wordVM = new() 
             { 
+                WordId = word.Id,
                 Name = word.Name, 
                 Definition = word.Definitions.ToList()[0].definition, 
                 Type = word.Definitions.ToList()[0].definitionType 
             };
-
-            /* word.Definitions.Count() > 1
-             * 
-
-            */
 
             if (word.Definitions.Count() > 1)
             {
@@ -184,6 +178,13 @@ namespace KelimeDefteri.Controllers
                 }
             }
             return View(wordVM);
+        }
+        public async Task<IActionResult> Update(long id, UpdateVM updateVM)
+        {
+
+
+
+            return View();
         }
         
     }

@@ -48,6 +48,7 @@ namespace KelimeDefteri.ViewModels.Defter
 
     public class UpdateVM
     {
+        public long WordId { get; set; }
         public string Name { get; set; } = string.Empty;
 
         public string Definition { get; set; } = string.Empty;

@@ -71,13 +71,15 @@
                         <input class="form-control" asp-for="restOfDefs" value="@Model.restOfDefs[i]" />
                     </div>
                     <div class="col-3">
-                        <input class="form-control" asp-for="restOfDefs" value="@Model.restOfTypes[i]" />
+                        <input class="form-control" asp-for="restOfTypes" value="@Model.restOfTypes[i]" />
                     </div>
                     <button id="delBtn-@i" class="btn mt-1" type="button" style="width: 60px; height: 40px;"><img src="/images/icons8-trash-bin-50.png" width="25px" height="25px" alt=""></button>
                 </div>
             </div>
-                
         }
+        <div class="text-center">
+            <input type="submit" class="btn btn-outline-warning" asp-action="Update" asp-route-id="@Model.WordId" value="Güncelle" />
+        </div>
     </form>
 </div>
 
