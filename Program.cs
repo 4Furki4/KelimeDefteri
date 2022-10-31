@@ -13,7 +13,8 @@ builder.Services.AddDbContext<DefterDB>(
     opt => opt.UseSqlServer
         (
             builder.Configuration["ConnectionStrings:DefterDBConnection"]
-        ), ServiceLifetime.Singleton
+        ), 
+        ServiceLifetime.Singleton
     );
 
 //builder.Services.AddSingleton<DefterDB>();
