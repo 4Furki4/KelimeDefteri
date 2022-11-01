@@ -7,11 +7,16 @@
     <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/style/DefterStyleSheet.css" rel="stylesheet" />
     <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div>
         @RenderBody()
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

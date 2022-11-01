@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RUKmqxkV5siMjDGR0EFaXsmfb0hr4EIQOeCrnZxuzxxAA8II12TyEbBZ57JWAXhfFrYPHWH5XstA7nWQ+R2Lhg==",
+  "dgSpecHash": "5saNUX+JPufCn7cb4kt2tPswOtyt4qUfPTTKZoDgS1Fa5dsU/mIDpfd3+6E1Tlm6IxUcHtYDRdj/kpCAU7CQhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Furkan Cengiz\\Source\\Repos\\4Furki4\\KelimeDefteri\\KelimeDefteri.csproj",
+  "projectFilePath": "C:\\Users\\Furkan Cengiz\\source\\repos\\4Furki4\\KelimeDefteri\\KelimeDefteri.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\Furkan Cengiz\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",

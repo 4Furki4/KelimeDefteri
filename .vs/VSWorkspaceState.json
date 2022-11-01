@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Views",
+    "\\Views\\Defter",
+    "\\Views\\Defter\\Components",
+    "\\Views\\Defter\\Components\\LastRecord"
   ],
-  "SelectedNode": "\\KelimeDefteri.sln",
+  "SelectedNode": "\\Views\\Defter\\Components\\LastRecord\\Default.cshtml",
   "PreviewInSolutionExplorer": false
 }

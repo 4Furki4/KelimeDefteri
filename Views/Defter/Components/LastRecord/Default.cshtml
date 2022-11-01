@@ -1,6 +1,7 @@
-﻿@model RecordDetailViewModel
+﻿<script src="~/jquery/jquery.min.js"></script>
+@model RecordDetailViewModel
 
-<div id="lastItemComponentContainer" class="container p-3 mt-5 mb-3">
+<div data-aos="fade-up" id="lastItemComponentContainer" class="container p-3 mt-5 mb-3">
     <div class="text-white fw-bold fs-4 p-3">
             Son Eklenen Kayıt - @Model.date.ToLongDateString()
             <ul class="list-group p-3 mb-3">
@@ -26,3 +27,7 @@
             </div>
         </div>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
