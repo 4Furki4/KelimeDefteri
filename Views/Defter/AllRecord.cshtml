@@ -1,10 +1,10 @@
 ﻿@model RecordListViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
-<div class="container p-3 mt-5">
+<div class="container p-3 mt-5" >
     <div class="row shadow-lg" style="background-color:#191b1c">
         @foreach (var Record in Model.Records)
         {
-            <div class="text-white fw-bold fs-4 recordArea">
+            <div class="text-white fw-bold fs-4 recordArea mt-5" data-aos="zoom-in-up">
                 @Record.date.ToShortDateString()
                 <ul class="list-group p-3 mb-3">
                     @foreach (var Word in Record.Words)

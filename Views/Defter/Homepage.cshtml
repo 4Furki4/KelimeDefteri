@@ -16,7 +16,7 @@
         $("document").ready(function(){
             $("#warningBox").hide().fadeIn(2000);
             $("#closeBtn").on("click", function () {
-                $("#warningBox").fadeOut(500);
+                $("#warningBox").fadeOut(500); 
             })
         });
     </script>
@@ -68,12 +68,8 @@
                         </div>
                 </div>
         </div>
-        <div id="lastRecord" class="row mt-5 text-white" data-aos="fade-up">
+        <div id="lastRecord" class="row mt-5 text-white" data-aos="zoom-in-up">
             <vc:last-record />
         </div>
     </div>
 </div>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
