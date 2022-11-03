@@ -7,8 +7,8 @@
 <h1 class="display-2 text-center mt-5 fw-bold fst-italic" style="color:white">Kelime Ekleme Sayfasına Hoş Geldiniz ! :)</h1>
 
 
-<div id="container" class="container" >
-    <form asp-action="AddRecord" method="post">
+<div id="container" class="container addInputsShadow py-3">
+    <form asp-action="AddRecord" method="post" style="padding-left:100px">
         <!-- First word's area starts -->
         <input id="dateInput" type="date" asp-for="Date" />
         <div class="mt-1"><span asp-validation-for="Date"></span></div>

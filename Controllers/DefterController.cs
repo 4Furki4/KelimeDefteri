@@ -210,6 +210,19 @@ namespace KelimeDefteri.Controllers
 
             return RedirectToAction(nameof(RecordDetail), new { id = word.RecordId });
         }
+
+
+        public async Task<IActionResult> SearchRecord(string searchInput)
+        {
+            var word = await context.Words.FirstOrDefaultAsync(w => w.Name == searchInput);
+            if (word != null)
+                return RedirectToAction(nameof(RecordDetail), new { id = word.RecordId });
+            var record = await context.Records.FirstOrDefaultAsync(rec => rec.date.Date == DateTime.Parse(searchInput));
+            if (record != null)
+                return RedirectToAction(nameof(RecordDetail), new { id = record.Id });
+
+            return RedirectToAction(nameof(Homepage));
+        }
         
     }
 }

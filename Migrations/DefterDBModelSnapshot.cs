@@ -17,7 +17,7 @@ namespace KelimeDefteri.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.9")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -101,7 +101,7 @@ namespace KelimeDefteri.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<DateTime>("date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date");
 
                     b.HasKey("Id");
 
@@ -111,7 +111,7 @@ namespace KelimeDefteri.Migrations
                         new
                         {
                             Id = 1,
-                            date = new DateTime(2022, 10, 14, 13, 58, 25, 31, DateTimeKind.Local).AddTicks(3063)
+                            date = new DateTime(2022, 11, 3, 22, 16, 34, 63, DateTimeKind.Local).AddTicks(2350)
                         });
                 });
 

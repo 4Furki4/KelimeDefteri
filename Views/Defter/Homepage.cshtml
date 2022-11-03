@@ -1,4 +1,6 @@
 ﻿<script src="/jquery/jquery.js"></script>
+<script src="~/jquery-validate/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 
 @model HomeViewModel
 <partial name="_NavbarPartial" model="@Context.Request.Path" />
@@ -46,17 +48,17 @@
                             <div class="offset-2 col-8 rounded-3 shadow-lg" style="background-color:#252829">
                                 <div class="offset-1 col-10">
                                     @*search input*@
-                                    <form method="post" class="mb-4 mx-3">
+                                    <form method="post" asp-controller="Defter" asp-action="SearchRecord" class="mb-4 mx-3">
                                         <div class="form-group">
                                             <label for="searchInput"></label>
                                             <div class="input-group">
-                                                <input type="search" class="form-control border-0 text-white" style="background-color:#181A1B" id="searchInput" 
-                                                placeholder="Kelime veya tarih (GG/AA/YYYY) ile arama"
-                                                asp-for="searchInput"
-                                                />
+                                                <input type="text"  class="form-control border-0 text-white" style="background-color:#181A1B" id="searchInput"
+                                                 placeholder="Kelime veya tarih (GG/AA/YYYY - GG.AA.YYYY) ile kayıt arayabilirsiniz"
+                                                 asp-for="searchInput"/>
                                                 <button id="araBtn" class="btn btn-dark border-start-0 bg-gradient shadow-lg purpleBtnHover col-12 col-md-3 col-lg-1">Ara</button>
                                             </div>
                                         </div>
+                                    <div><span asp-validation-for="searchInput"></span></div>
                                     </form>
                                 </div>
                             </div>
