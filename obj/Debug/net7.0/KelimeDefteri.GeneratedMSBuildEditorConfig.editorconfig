@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = KelimeDefteri
+build_property.RootNamespace = KelimeDefteri
+build_property.ProjectDir = C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteri\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Furkan Cengiz\source\repos\4Furki4\KelimeDefteri
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Pages/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3JQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/AddRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXEFkZFJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/AllRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXEFsbFJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/Components/LastRecord/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXENvbXBvbmVudHNcTGFzdFJlY29yZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/Homepage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXEhvbWVwYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/RecordDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXFJlY29yZERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Defter/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmdGVyXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/Shared/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Furkan Cengiz/source/repos/4Furki4/KelimeDefteri/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
