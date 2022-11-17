@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using KelimeDefteri.Models;
+using KelimeDefteri.Controllers.Businesses;
 using KelimeDefteri.Models.Validations;
 using KelimeDefteri.ViewModels;
 using KelimeDefteri.ViewModels.Defter;
@@ -13,12 +14,15 @@ namespace KelimeDefteri.Controllers
 {
     public class DefterController : Controller
     {
+
+        public Business business { get; set; }
         private DefterDB context;
         public int pageSize = 4;
 
-        public DefterController(DefterDB context)
+        public DefterController(DefterDB context, Business business)
         {
             this.context = context;
+            this.business = business;
         }
 
         public async Task<IActionResult> Homepage(string? deletedRecordDate)
@@ -36,7 +40,7 @@ namespace KelimeDefteri.Controllers
         public async Task<IActionResult> AllRecord(int recordPage = 1)
         {
             List<AllRecordViewModel> model = new();
-            List<Record> records = await context.Records.Include(gk => gk.Words).ThenInclude(K=>K.Definitions).ToListAsync();
+            List<Record> records = await business.getAllRecords();
             foreach (Record record in records)
             {
                 model.Add(new AllRecordViewModel { Words = record.Words, date = record.date, Id = record.Id});
@@ -73,33 +77,23 @@ namespace KelimeDefteri.Controllers
                 }
                 return RedirectToPage("/ErrorPage", new { errorMessage = errorMessages, returnPage = HttpContext.Request.Path });
             }
+           
             Record record = new Record() { date = VM.Date };
+            
             for (int i = 1; i < 5; i++) // I am working on 4 words, so I can loop them 4 times and can use the variables to fetch the properties defined ViewModels.
             {
-                #pragma warning disable CS8602 // Dereference of a possibly null reference.
-                Word word = new();
-                word.Name = VM.GetType()?.GetProperty($"WordName{i}")?.GetValue(VM)?.ToString()?.makeFirstCapitilized();
-                word.Definitions.Add                                //adding required definition and type inputs to its word.
-                (
-                    new Definition 
-                    { 
-                        definition = VM.GetType().GetProperty($"Definition{i}")?.GetValue(VM)?.ToString()?.makeFirstCapitilized(),
-                        definitionType = VM.GetType().GetProperty($"Type{i}")?.GetValue(VM)?.ToString()?.makeFirstCapitilized()
-                    }
-                );
-                
-                List<string>? newDefs = newInputs.GetType().GetProperty($"newDefinition{i}")?.GetValue(newInputs) as List<string>;      // get extra inputs for definitions as list of string
-                List<string>? newTypes = newInputs.GetType().GetProperty($"newType{i}")?.GetValue(newInputs) as List<string>;           // get extra inputs for types as list of string
-                #pragma warning restore CS8602 // Dereference of a possibly null reference.
+                Word word = business.PrepareAWord(VM, i);
+
+                List<string>? newDefs = business.PrepareExtraDefinitions(newInputs, i);      // get extra inputs for definitions as list of string
+                List<string>? newTypes = business.PrepareExtraTypes(newInputs, i);           // get extra inputs for types as list of string
+
 
                 if (newDefs.Any() && (newDefs.Contains(null) || newTypes.Contains(null))) // if user send blank extra definition inputs, redirect them to error page and show error message to them.
                     return RedirectToPage("/ErrorPage", new { errorMessage = "Lütfen ek tanımlar eklerken ikisini de girin!", returnPage = HttpContext.Request.Path });
 
-                for (int d = 0; d < newDefs.Count; d++)     // add new definition objects by newDefs count.
-                    word.Definitions.Add(new Definition { definition = newDefs[d], definitionType = newTypes[d] });
-                //Add each created word to record object
-                record.Words.Add(word);                      
+                word = business.AddExtraDefinitions(word,newDefs, newTypes);
                 
+                record.Words.Add(word); //Add each created word to record object
             }
 
             context.Records.Add(record);                    // then add the record to db. 

@@ -1,4 +1,5 @@
 using FluentValidation.AspNetCore;
+using KelimeDefteri.Controllers.Businesses;
 using KelimeDefteri.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,7 +17,7 @@ builder.Services.AddDbContext<DefterDB>(
         ), 
         ServiceLifetime.Singleton
     );
-
+builder.Services.AddSingleton<Business>();
 //builder.Services.AddSingleton<DefterDB>();
 
 
